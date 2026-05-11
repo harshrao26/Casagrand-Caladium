@@ -34,7 +34,7 @@ export default function Home() {
                 <Clubhouse />
 
 
-        <Gallery />
+        {/* <Gallery /> */}
         <GalleryImages/>
                 {/* <VirtualTour360/> */}
 
@@ -45,7 +45,7 @@ export default function Home() {
         {/* <Configuration /> */}
                 {/* <PricingConfiguration/> */}
 <FloorPlanSection/>
-        <Videos />
+        {/* <Videos /> */}
         <Location />
         <Contact />
       </main>

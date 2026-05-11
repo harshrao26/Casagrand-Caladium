@@ -155,31 +155,7 @@ const floorPlanGroups = [
       { title: "CG19", src: "/flooreplan/UNIT PLAN/3BHK/JPG/CG19.jpg" },
     ],
   },
-  {
-    id: "indoor",
-    label: "Indoor Plans",
-    icon: ImageIcon,
-    images: [
-      { title: "C26", src: "/indoor-images/Copy of c26.jpg" },
-      { title: "S02", src: "/indoor-images/Copy of s02.jpg" },
-      { title: "S03", src: "/indoor-images/Copy of s03.jpg" },
-      { title: "S11", src: "/indoor-images/Copy of s11.jpg" },
-      { title: "S12", src: "/indoor-images/Copy of s12.jpg" },
-      { title: "S14", src: "/indoor-images/Copy of s14.jpg" },
-      { title: "S15", src: "/indoor-images/Copy of s15.jpg" },
-      { title: "S20", src: "/indoor-images/Copy of s20.jpg" },
-      { title: "S21", src: "/indoor-images/Copy of s21.jpg" },
-      { title: "S24", src: "/indoor-images/Copy of s24.jpg" },
-      { title: "S26", src: "/indoor-images/Copy of s26.jpg" },
-      { title: "S27", src: "/indoor-images/Copy of s27.jpg" },
-      { title: "S28", src: "/indoor-images/Copy of s28.jpg" },
-      { title: "S30", src: "/indoor-images/Copy of s30.jpg" },
-      { title: "S31", src: "/indoor-images/Copy of s31.jpg" },
-      { title: "S34", src: "/indoor-images/Copy of s34.jpg" },
-      { title: "S35", src: "/indoor-images/Copy of s35.jpg" },
-      { title: "S36", src: "/indoor-images/Copy of s36.jpg" },
-    ],
-  },
+   
 ];
 
 const PreviewModal = ({ previewImage, setPreviewImage }) => {
@@ -196,15 +172,7 @@ const PreviewModal = ({ previewImage, setPreviewImage }) => {
 
       <div className="relative max-h-[92vh] w-full max-w-6xl overflow-hidden rounded-[24px] bg-white shadow-2xl md:rounded-[28px]">
         <div className="flex items-center justify-between border-b border-zinc-100 p-4">
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-[2px] text-[var(--accent)]">
-              Floor Plan Preview
-            </p>
-            <h3 className="mt-1 text-base font-black text-zinc-950 md:text-lg">
-              {previewImage.title}
-            </h3>
-          </div>
-
+          <div></div>
           <button
             type="button"
             onClick={() => setPreviewImage(null)}
@@ -271,32 +239,7 @@ export const FloorPlanVariationOne = () => {
           </p>
         </div>
 
-        <div className="mb-5 grid grid-cols-3 gap-3 md:mb-7">
-          <div className="rounded-2xl bg-white p-4 text-center shadow-sm md:rounded-3xl md:p-5">
-            <h3 className="text-2xl font-black text-zinc-950 md:text-4xl">
-              {floorPlanGroups.length}
-            </h3>
-            <p className="mt-1 text-[10px] font-bold uppercase tracking-[1.5px] text-zinc-500">
-              Categories
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-white p-4 text-center shadow-sm md:rounded-3xl md:p-5">
-            <h3 className="text-2xl font-black text-zinc-950 md:text-4xl">
-              {totalImages}
-            </h3>
-            <p className="mt-1 text-[10px] font-bold uppercase tracking-[1.5px] text-zinc-500">
-              Layout Images
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-[var(--accent)] p-4 text-center text-white shadow-sm md:rounded-3xl md:p-5">
-            <h3 className="text-2xl font-black md:text-4xl">1-3</h3>
-            <p className="mt-1 text-[10px] font-bold uppercase tracking-[1.5px] text-white/80">
-              BHK Plans
-            </p>
-          </div>
-        </div>
+      
 
         <div className="mb-5 flex gap-2 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mb-7">
           {floorPlanGroups.map((group) => {
@@ -371,15 +314,7 @@ export const FloorPlanVariationOne = () => {
                 </div>
               </button>
 
-              <div className="p-4">
-                <p className="text-[10px] font-bold uppercase tracking-[2px] text-[var(--accent)]">
-                  {activeGroup.label}
-                </p>
-
-                <h4 className="mt-1 text-base font-black text-zinc-950">
-                  {item.title}
-                </h4>
-              </div>
+            
             </div>
           ))}
         </div>

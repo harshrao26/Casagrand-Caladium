@@ -30,7 +30,7 @@ const Navbar = () => {
     { label: "Overview", href: "#overview" },
     { label: "Gallery", href: "#gallery" },
     { label: "Amenities", href: "#amenities" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Floor Plan", href: "#floor-plan" },
     { label: "Location", href: "#location" },
   ];
 
@@ -80,7 +80,7 @@ const Navbar = () => {
                 href="https://www.google.com/maps?cid=8194377754012098570&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en&gl=IN&source=embed"
                 className="transition hover:text-[var(--accent)]"
               >
-                Bengaluru
+                Kumbalgodu
               </a>
             </div>
 

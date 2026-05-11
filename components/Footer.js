@@ -12,8 +12,8 @@ const Footer = () => {
   { label: "Overview", href: "#overview" },
   { label: "Gallery", href: "#gallery" },
   { label: "Amenities", href: "#amenities" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Location", href: "#location" },
+  { label: "Floor Plan", href: "#floor-plan" },
+   { label: "Location", href: "#location" },
 ];
 
   return (
@@ -22,10 +22,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-10 md:mb-12">
           
           {/* Brand Column */}
-          <div className="space-y-6">
-            <img src="/assets/cg_logo.png" alt="Casagrand" className="h-12 brightness-0 invert" />
+          <div className="space-y-6 p-2">
+            <img src="/logo.png" alt="Casagrand" className="h-12 bg-white p-2 rounded-xl" />
             <p className="section-copy section-copy-on-dark">
-              Casagrand Moondance Kumbalgodu brings spacious 1, 2 and 3 BHK apartments to the fast-growing Mysore Road corridor, with low-rise planning and lifestyle amenities for everyday living.
+              Casagrand Moondance Kumbalgodu brings spacious 2 & 3 BHK apartments to the fast-growing Mysore Road corridor, with low-rise planning and lifestyle amenities for everyday living.
             </p>
              
           </div>

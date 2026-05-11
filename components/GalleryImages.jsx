@@ -8,15 +8,23 @@ const Gallery = () => {
   const { openLeadForm } = useLeadForm();
 
   const images = [
-    "/indoor-images/image.png",
-    "/indoor-images/image copy.png",
-    "/indoor-images/image copy 2.png",
-    "/indoor-images/image copy 3.png",
-    "/indoor-images/image copy 4.png",
-    "/indoor-images/image copy 5.png",
-    "/indoor-images/image copy 6.png",
-    "/indoor-images/image copy 7.png",
-    "/indoor-images/image copy 8.png",
+    "/indoor-images/Copy of s35.jpg",
+    "/indoor-images/Copy of s02.jpg",
+    "/indoor-images/Copy of s03.jpg",
+    "/indoor-images/Copy of s11.jpg",
+    "/indoor-images/Copy of s12.jpg",
+    "/indoor-images/Copy of s14.jpg",
+    "/indoor-images/Copy of s15.jpg",
+    "/indoor-images/Copy of s20.jpg",
+    "/indoor-images/Copy of s21.jpg",
+    "/indoor-images/Copy of s24.jpg",
+    "/indoor-images/Copy of s26.jpg",
+    "/indoor-images/Copy of s27.jpg",
+    "/indoor-images/Copy of s28.jpg",
+    "/indoor-images/Copy of s30.jpg",
+    "/indoor-images/Copy of s31.jpg",
+    "/indoor-images/Copy of s34.jpg",
+    "/indoor-images/Copy of s36.jpg",
   ];
 
   return (
@@ -114,11 +122,11 @@ const Gallery = () => {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-              <div className="absolute left-6 top-6 rounded-full border border-white/15 bg-black/30 px-4 py-2 text-xs font-semibold uppercase tracking-[2px] text-white backdrop-blur-md">
+              {/* <div className="absolute left-6 top-6 rounded-full border border-white/15 bg-black/30 px-4 py-2 text-xs font-semibold uppercase tracking-[2px] text-white backdrop-blur-md">
                 Featured View
-              </div>
+              </div> */}
 
-              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              {/* <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                 <p className="text-sm font-semibold uppercase tracking-[2px] text-[var(--accent)]">
                   Premium Interior
                 </p>
@@ -126,7 +134,7 @@ const Gallery = () => {
                 <h3 className="mt-2 max-w-xl text-md font-semibold leading-tight text-white md:text-xl">
                   Elegant indoor spaces crafted for modern luxury living.
                 </h3>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side Grid */}
