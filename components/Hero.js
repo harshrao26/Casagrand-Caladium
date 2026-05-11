@@ -55,7 +55,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[30vh] md:mt-0 mt-18  w-full overflow-hidden pt-20 md:h-[90vh]">
+    <section className="relative min-h-[30vh]   mt-18  w-full overflow-hidden pt-20 md:h-[90vh]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div
