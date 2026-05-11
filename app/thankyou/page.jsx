@@ -15,7 +15,7 @@ const ThankYouPage = () => {
         </div>
 
         <img
-          src="/assets/cg_logo.png"
+          src="/image-removebg-preview.png"
           alt="Casagrand"
           className="mx-auto mb-8 h-12"
         />
