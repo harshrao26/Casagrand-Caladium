@@ -6,17 +6,17 @@
 
 
 :root {
-  --primary-1: #f4efe3;
+  --primary-1: #f8faf8;
   --primary-2: #ffffff;
-  --secondary-1: #2b0b3f;
-  --secondary-2: #bd8d52;
-  --accent: #c98d2d;
-  --accent-hover: #8f611a;
+  --secondary-1: #2F5544;
+  --secondary-2: #C5A059;
+  --accent: #C5A059;
+  --accent-hover: #A68341;
   --background: var(--primary-1);
-  --foreground: #2d1a16;
-  --primarycolor: #2d1a16;
-  --secondarycolor: #000000;
-  --ternarycolor: #000000;
+  --foreground: #1a2e25;
+  --primarycolor: #1a2e25;
+  --secondarycolor: #2F5544;
+  --ternarycolor: #C5A059;
   --whitecolor: var(--primary-2);
   --goldbg: var(--secondary-1);
   --goldcolor: var(--accent);
@@ -335,7 +335,7 @@ html {
 }
 
 .ccd-config-top .text-2 {
-  background-color: #B89275;
+  background-color: var(--secondary-1);
   color: #ffffff;
   padding: 5px 20px;
 }
@@ -369,7 +369,7 @@ html {
   left: 0;
   display: flex;
   width: 100%;
-  background-color: #FFEBEA;
+  background-color: #f0f4f2;
   z-index: 5555;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
 }
@@ -382,11 +382,11 @@ html {
 }
 
 .callus-text-button:first-child {
-  background: #d5b9a1;
+  background: var(--secondary-1);
 }
 
 .callus-text-button a {
-  color: #881a10;
+  color: var(--secondary-2);
   text-transform: uppercase;
 }
 
