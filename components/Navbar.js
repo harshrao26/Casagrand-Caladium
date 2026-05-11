@@ -28,6 +28,7 @@ const Navbar = () => {
 
   const links = [
     { label: "Overview", href: "#overview" },
+    { label: "Pricing", href: "#pricing" },
     { label: "Gallery", href: "#gallery" },
     { label: "Amenities", href: "#amenities" },
     { label: "Floor Plan", href: "#floor-plan" },

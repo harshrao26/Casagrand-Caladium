@@ -32,7 +32,7 @@ const OfferVariationThree = () => {
 
   return (
     <section
-      id="offer-price"
+      id="pricing"
       className="relative overflow-hidden bg-[#faf7f1] px-4 py-10 md:py-16"
     >
       <div className="absolute left-1/2 top-0 h-[440px] w-[440px] -translate-x-1/2 rounded-full bg-[var(--accent)]/15 blur-[120px]" />

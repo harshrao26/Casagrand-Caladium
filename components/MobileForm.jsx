@@ -60,8 +60,8 @@ const Hero = () => {
       
 
       {/* Bottom Horizontal Form */}
-      <div className="md:absolute   inset-x-0 bottom-0 z-20 px-4 pb-5 md:pb-8">
-        <div className="mx-auto max-w-4xl rounded-[28px] border border-white/20 bg-white/95 p-4 shadow-[0_24px_90px_rgba(0,0,0,0.28)] backdrop-blur-xl md:rounded-full md:p-3">
+      <div className="md:absolute   inset-x-0 bottom-0 z-20  ">
+        <div className="mx-auto max-w-4xl rounded-[28px] border border-white/20 bg-white/95 p-4 shad ow-[0_24px_90px_rgba(0,0,0,0.28)] backdrop-blur-xl md:rounded-full md:p-3">
           <form className="grid gap-3 md:grid-cols-[1fr_1fr_1fr_auto] md:items-center" onSubmit={handleSubmit}>
             {/* Name */}
             <div className="flex items-center gap-3 rounded-full border border-zinc-200 bg-zinc-50 px-4 py-3">

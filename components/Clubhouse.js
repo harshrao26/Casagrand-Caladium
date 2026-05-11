@@ -111,7 +111,7 @@ export const ClubhouseVariationOne = () => {
             })}
           </div>
 
-          <CTAButton openLeadForm={openLeadForm} />
+          {/* <CTAButton openLeadForm={openLeadForm} /> */}
         </motion.div>
 
         <motion.div
@@ -224,7 +224,7 @@ export const ClubhouseVariationTwo = () => {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <CTAButton openLeadForm={openLeadForm} dark />
+          {/* <CTAButton openLeadForm={openLeadForm} dark /> */}
         </div>
       </div>
     </section>
@@ -306,7 +306,7 @@ export const ClubhouseVariationThree = () => {
               })}
             </div>
 
-            <CTAButton openLeadForm={openLeadForm} />
+            {/* <CTAButton openLeadForm={openLeadForm} /> */}
           </motion.div>
         </div>
       </div>
@@ -373,7 +373,7 @@ export const ClubhouseVariationFour = () => {
             })}
           </div>
 
-          <CTAButton openLeadForm={openLeadForm} dark />
+          {/* <CTAButton openLeadForm={openLeadForm} dark /> */}
         </motion.div>
       </div>
     </section>
@@ -442,7 +442,7 @@ export const ClubhouseVariationFive = () => {
         </div>
 
         <div className="mt-10">
-          <CTAButton openLeadForm={openLeadForm} />
+          {/* <CTAButton openLeadForm={openLeadForm} /> */}
         </div>
       </div>
     </section>
@@ -481,7 +481,7 @@ export const ClubhouseVariationSix = () => {
             that makes every day feel elevated.
           </p>
 
-          <CTAButton openLeadForm={openLeadForm} dark />
+          {/* <CTAButton openLeadForm={openLeadForm} dark /> */}
         </motion.div>
 
         <div className="grid gap-5 md:grid-cols-2">
@@ -590,7 +590,7 @@ export const ClubhouseVariationSeven = () => {
               })}
             </div>
 
-            <CTAButton openLeadForm={openLeadForm} dark />
+            {/* <CTAButton openLeadForm={openLeadForm} dark /> */}
           </div>
 
           <div className="relative min-h-[520px]">
@@ -681,7 +681,7 @@ export const ClubhouseVariationEight = () => {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <CTAButton openLeadForm={openLeadForm} />
+          {/* <CTAButton openLeadForm={openLeadForm} /> */}
         </div>
       </div>
     </section>
@@ -767,7 +767,7 @@ export const ClubhouseVariationNine = () => {
             })}
           </div>
 
-          <CTAButton openLeadForm={openLeadForm} />
+          {/* <CTAButton openLeadForm={openLeadForm} /> */}
         </motion.div>
       </div>
     </section>
@@ -825,7 +825,7 @@ export const ClubhouseVariationTen = () => {
               ))}
             </div>
 
-            <CTAButton openLeadForm={openLeadForm} dark />
+            {/* <CTAButton openLeadForm={openLeadForm} dark /> */}
           </motion.div>
 
           <motion.div

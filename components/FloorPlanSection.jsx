@@ -221,7 +221,7 @@ export const FloorPlanVariationOne = () => {
       <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/15 blur-[140px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-8 grid gap-6 md:grid-cols-[0.9fr_1.1fr] md:items-end">
+        <div className="mb-8 grid   md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
             <p className="text-xs font-bold uppercase tracking-[4px] text-[var(--accent)]">
               Floor Plans
@@ -292,16 +292,16 @@ export const FloorPlanVariationOne = () => {
           </button>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap- grid-cols-2 lg:grid-cols-3">
           {activeGroup?.images.map((item, index) => (
             <div
               key={`${activeGroup.id}-${index}`}
-              className="group overflow-hidden rounded-[28px] border border-zinc-100 bg-white shadow-[0_18px_60px_rgba(0,0,0,0.07)] transition hover:-translate-y-1"
+              className="group overflow-hidden      "
             >
               <button
                 type="button"
                 onClick={() => setPreviewImage(item)}
-                className="relative block h-[260px] w-full overflow-hidden bg-zinc-100 md:h-[330px]"
+                className="relative  ]"
               >
                 <img
                   src={item.src}
