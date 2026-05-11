@@ -28,7 +28,7 @@ const Contact = () => {
             </h2>
 
             <p className="mt-5 max-w-xl text-sm leading-7 text-zinc-600 md:text-base">
-              Experience grand living at Casagrand Casablanca. Fill out the form
+              Experience spacious living at Casagrand Moondance Kumbalgodu. Fill out the form
               and our representative will get back to you shortly with brochure,
               pricing, and visit scheduling details.
             </p>
@@ -46,7 +46,7 @@ const Contact = () => {
                     Email Us
                   </p>
                   <p className="mt-1 text-sm font-bold text-zinc-950 md:text-base">
-                    info@casagrandcasablanca.com
+                    info@casagrandkumbalgodu.com
                   </p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                     Location
                   </p>
                   <p className="mt-1 text-sm font-bold text-zinc-950 md:text-base">
-                    Holiday Village Rd, Vakil Garden City, Mallasandra, Karnataka 560109
+                    VFF2+QRJ, off Mysore Road, Kumbalgodu, Bengaluru, Karnataka 560074
                   </p>
                 </div>
               </div>

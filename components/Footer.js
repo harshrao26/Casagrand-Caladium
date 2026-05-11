@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="space-y-6">
             <img src="/assets/cg_logo.png" alt="Casagrand" className="h-12 brightness-0 invert" />
             <p className="section-copy section-copy-on-dark">
-              Casagrand Casablanca brings you the finest luxury living in the heart of the city. Experience unparalleled comfort and world-class amenities designed for your lifestyle.
+              Casagrand Moondance Kumbalgodu brings spacious 1, 2 and 3 BHK apartments to the fast-growing Mysore Road corridor, with low-rise planning and lifestyle amenities for everyday living.
             </p>
              
           </div>
@@ -53,12 +53,12 @@ const Footer = () => {
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">
                 <MapPin className="text-[var(--accent)] shrink-0 mt-1" size={20} />
-                <span className="text-white">Holiday Village Rd, Vakil Garden City, Mallasandra, Karnataka 560109</span>
+                <span className="text-white">VFF2+QRJ, off Mysore Road, Kumbalgodu, Bengaluru, Karnataka 560074</span>
               </li>
               
               <li className="flex items-center space-x-4">
                 <Mail className="text-[var(--accent)] shrink-0" size={20} />
-                <a href="mailto:info@casagrandcasablanca.com" className="text-white hover:text-white transition-colors">info@casagrandcasablanca.com</a>
+                <a href="mailto:info@casagrandkumbalgodu.com" className="text-white hover:text-white transition-colors">info@casagrandkumbalgodu.com</a>
               </li>
             </ul>
           </div>

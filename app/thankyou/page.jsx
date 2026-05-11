@@ -27,7 +27,7 @@ const ThankYouPage = () => {
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-600 md:text-lg">
           Your enquiry for{" "}
           <span className="font-bold text-zinc-950">
-            Casagrand Casablanca
+            Casagrand Moondance
           </span>{" "}
           has been submitted successfully. Our team will contact you shortly
           with pricing, brochure, floor plan, and site visit details.
@@ -46,7 +46,7 @@ const ThankYouPage = () => {
         </div>
 
         <p className="mt-8 text-xs font-semibold uppercase tracking-[2px] text-zinc-400">
-          Casagrand Casablanca • Bengaluru
+          Casagrand Moondance • Bengaluru
         </p>
       </section>
     </main>

@@ -61,7 +61,7 @@ const Hero = () => {
         <div
           className="absolute saturate-130 inset-0 scale-105 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] ease-out"
           style={{
-            backgroundImage: "url('/prop/Copy of Main Entrance.webp')",
+            backgroundImage: "url('/indoor-images/Copy of s03.jpg')",
           }}
         />
 

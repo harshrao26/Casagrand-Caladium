@@ -30,7 +30,7 @@ const VirtualTour360 = () => {
             </span>
 
             <h2 className="section-title section-title-on-dark">
-              Experience Casablanca in{" "}
+              Experience Moondance in{" "}
               <span className="text-[var(--accent)]">360° View</span>
             </h2>
           </motion.div>
@@ -42,7 +42,7 @@ const VirtualTour360 = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Take an immersive virtual walkthrough of Casagrand Casablanca and
+            Take an immersive virtual walkthrough of Casagrand Moondance and
             explore the project spaces, lifestyle zones, and visual experience
             before your site visit.
           </motion.p>
@@ -57,8 +57,8 @@ const VirtualTour360 = () => {
         >
           <div className="relative h-[440px] overflow-hidden rounded-[24px] bg-black md:h-[640px] md:rounded-[30px]">
             <iframe
-              src="https://onetobeam.com/virtual_tours/casagrand_Casablanca/"
-              title="Casagrand Casablanca 360 Virtual Tour"
+              src="https://onetobeam.com/virtual_tours/casagrand_Moondance/"
+              title="Casagrand Moondance 360 Virtual Tour"
               className="h-full w-full"
               allowFullScreen
               loading="lazy"
@@ -78,7 +78,7 @@ const VirtualTour360 = () => {
               </p>
 
               <h3 className="mt-1 text-lg font-extrabold">
-                Explore Casablanca Virtually
+                Explore Moondance Virtually
               </h3>
 
               <p className="mt-1 text-xs leading-5 text-white/65">
@@ -87,7 +87,7 @@ const VirtualTour360 = () => {
 
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <a
-                  href="https://onetobeam.com/virtual_tours/casagrand_Casablanca/"
+                  href="https://onetobeam.com/virtual_tours/casagrand_Moondance/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-3 text-[11px] font-bold uppercase tracking-[1px] text-white"
@@ -111,7 +111,7 @@ const VirtualTour360 = () => {
 
         <div className="mt-6 hidden gap-4 md:grid md:grid-cols-2">
           <a
-            href="https://onetobeam.com/virtual_tours/casagrand_Casablanca/"
+            href="https://onetobeam.com/virtual_tours/casagrand_Moondance/"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/10"

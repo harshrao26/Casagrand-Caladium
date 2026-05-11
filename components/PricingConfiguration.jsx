@@ -5,32 +5,32 @@ import React from "react";
 const PricingConfiguration = () => {
   const phase2 = [
     {
+      bhk: "1 BHK",
+      unitType: "Apartment",
+      area: "880 Sqft - 1020 Sqft",
+      price: "₹ 5499 / Sqft",
+      range: "On Request",
+    },
+    {
       bhk: "2 BHK",
-      unitType: "Compact",
-      area: "1410 Sqft - 1661 Sqft",
-      price: "₹ 7999 / Sqft",
-      range: "₹ 1.20Cr to 1.38Cr",
+      unitType: "Apartment",
+      area: "1175 Sqft - 1455 Sqft",
+      price: "₹ 5499 / Sqft",
+      range: "₹ 86.22L onwards",
     },
     {
       bhk: "3 BHK",
-      unitType: "Compact",
-      area: "1923 Sqft - 2171 Sqft",
-      price: "₹ 7999 / Sqft",
-      range: "₹ 1.64Cr to 1.82Cr",
+      unitType: "Affordable",
+      area: "1595 Sqft - 1695 Sqft",
+      price: "₹ 5499 / Sqft",
+      range: "On Request",
     },
     {
-      bhk: "4 BHK",
-      unitType: "Compact",
-      area: "2742 Sqft",
-      price: "₹ 8199 / Sqft",
-      range: "₹ 2.37Cr Onwards",
-    },
-    {
-      bhk: "5 BHK",
-      unitType: "Compact",
-      area: "3939 Sqft",
-      price: "₹ 8399 / Sqft",
-      range: "₹ 3.37Cr Onwards",
+      bhk: "3 BHK",
+      unitType: "Superior",
+      area: "1810 Sqft - 1890 Sqft",
+      price: "₹ 5499 / Sqft",
+      range: "On Request",
     },
   ];
 
@@ -238,12 +238,12 @@ const PricingConfiguration = () => {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-400 md:text-base">
-            Explore apartment configurations, built-up areas, price per square
-            foot, and price range for Phase 1 and Phase 2.
+            Explore Casagrand Moondance Kumbalgodu configurations, super
+            built-up areas, basic rate, and current launch pricing.
           </p>
         </div>
 
-        {renderPricingTable("Apartments - Phase 2", phase2)}
+        {renderPricingTable("Casagrand Moondance Kumbalgodu", phase2)}
         {/* {renderPricingTable("Apartments - Phase 1", phase1)} */}
 
         <div className="mx-auto max-w-2xl rounded-full border border-white/10 bg-white/[0.04] px-5 py-4 text-center backdrop-blur-xl">

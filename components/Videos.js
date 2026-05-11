@@ -10,7 +10,7 @@ const Videos = () => {
     {
       title: "Top 6 Reasons to Buy",
       desc: "A quick overview of the project’s strongest lifestyle and investment highlights.",
-      videoUrl: "/vid/Copy of Top 6 reasons Casablanca-phase 2.mp4",
+      videoUrl: "/vid/Copy of Top 6 reasons Moondance-phase 2.mp4",
       thumb: "/ol.png",
     },
     {
@@ -37,7 +37,7 @@ const Videos = () => {
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-600 md:text-base">
             Watch curated videos that explain the project highlights,
-            walkthrough experience, and reasons to choose Casagrand Casablanca.
+            walkthrough experience, and reasons to choose Casagrand Moondance.
           </p>
         </div>
 

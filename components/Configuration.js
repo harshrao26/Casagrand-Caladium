@@ -2,9 +2,9 @@ import React from "react";
 
 const Configuration = () => {
   const configs = [
-    { type: "Villa Plot", area: "600 - 1200", price: "₹ 44 Lacs*" },
-    { type: "Villa Plot", area: "1200 - 1800", price: "₹ 88 Lacs*" },
-    { type: "Villa Plot", area: "1800 - 2400", price: "₹ 1.32 Cr*" },
+    { type: "1 BHK + 1T", area: "880 - 1020", price: "On Request" },
+    { type: "2 BHK + 2T", area: "1175 - 1455", price: "₹ 86.22 Lacs*" },
+    { type: "3 BHK + 3T", area: "1595 - 1890", price: "On Request" },
   ];
 
   return (
@@ -22,12 +22,12 @@ const Configuration = () => {
           
 
           <h2 className="section-title section-title-on-dark">
-            Plot Sizes & <span className="text-[var(--accent)]">Pricing</span>
+            Apartment Sizes & <span className="text-[var(--accent)]">Pricing</span>
           </h2>
 
           <p className="section-copy-on-dark mx-auto mt-4 max-w-2xl">
-            Premium villa plots crafted for modern living with excellent
-            connectivity and investment potential.
+            Spacious homes in Kumbalgodu crafted for modern living with
+            excellent Mysore Road connectivity and investment potential.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const Configuration = () => {
                 Project
               </p>
               <h3 className="text-lg font-semibold text-white md:text-xl">
-                Casagrand Casablanca
+                Casagrand Moondance
               </h3>
             </div>
 
@@ -49,7 +49,7 @@ const Configuration = () => {
                 Location
               </p>
               <h3 className="text-lg font-semibold text-white md:text-xl">
-                Oragadam, Chennai
+                Kumbalgodu, Bengaluru
               </h3>
             </div>
 
@@ -58,7 +58,7 @@ const Configuration = () => {
                 Starting Price
               </p>
               <h3 className="text-xl font-bold text-[var(--accent)] md:text-2xl">
-                ₹ 44 Lacs*
+                ₹ 86.22 Lacs*
               </h3>
             </div>
           </div>

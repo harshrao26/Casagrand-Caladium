@@ -15,6 +15,8 @@ import ReviewSection from "@/components/ReviewSection";
 import PricingConfiguration from "@/components/PricingConfiguration";
 import VirtualTour360 from "@/components/VirtualTour360";
 import MobileForm from "@/components/MobileForm";
+import OfferPriceSection from "@/components/OfferPriceSection";
+import FloorPlanSection from "@/components/FloorPlanSection";
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <main className="flex-1">
         <Navbar />
         <Hero />
+        <OfferPriceSection/>
         <MobileForm />
                 {/* <ReviewSection /> */}
 
@@ -33,15 +36,15 @@ export default function Home() {
 
         <Gallery />
         <GalleryImages/>
-                <VirtualTour360/>
+                {/* <VirtualTour360/> */}
 
         {/* <FloorPlan /> */}
         <Amenities />
 
         
         {/* <Configuration /> */}
-                <PricingConfiguration/>
-
+                {/* <PricingConfiguration/> */}
+<FloorPlanSection/>
         <Videos />
         <Location />
         <Contact />

@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 
 
 export const metadata = {
-  title: "Roman-Inspired Luxury Living at Casagrand Casablanca, Kanakapura Road, Bengaluru",
-  description: "Experience the pinnacle of luxury with Casagrand Casablanca in Kogilu, North Bangalore. Offering premium 2, 3 & 4 BHK apartments inspired by Dubai's iconic architecture.",
+  title: "Casagrand Moondance Kumbalgodu | Apartments in Kumbalgodu, Bengaluru",
+  description: "Explore Casagrand Moondance Kumbalgodu, a new launch residential community off Mysore Road with spacious 1, 2 and 3 BHK apartments across 8.25 acres.",
   icons: {
     icon: [
       { url: '/favicon.ico' },

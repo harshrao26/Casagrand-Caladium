@@ -44,16 +44,16 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed left-0 top-0 z-50 w-full border-b transition-all duration-300 ${
+        className={`fixed left-0 top-0 z-50 w-full bg-white border-b transition-all duration-300 ${
           scrolled
-            ? "border-zinc-200 bg-white/95 py-3 shadow-sm backdrop-blur-xl"
-            : "border-zinc-200 bg-white/90 py-4 backdrop-blur-xl"
+            ? "border-zinc-200 bg-white py-3 shadow-sm backdrop-blur-xl"
+            : "border-zinc-200 bg-white py-4 backdrop-blur-xl"
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <img src="/assets/cg_logo.png" alt="Casagrand" className="h-10" />
+            <img src="/logo.png" alt="Casagrand" className="h-10" />
           </a>
 
           {/* Desktop Links */}

@@ -164,9 +164,9 @@ const LeadFormModal = ({ isOpen, onClose }) => {
       <div className="relative grid w-full max-w-4xl overflow-hidden rounded-[36px] bg-white shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:grid-cols-[0.9fr_1.1fr]">
         <div className="relative hidden min-h-[520px] overflow-hidden bg-[var(--secondary-1)] md:block">
           <div
-            className="absolute inset-0 bg-cover bg-left"
-            style={{ backgroundImage: "url('/prop/Copy of Main Entrance.webp')" }}
-          />
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/indoor-images/Copy of s03.jpg')" }}
+          />₹
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent" />
 
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
@@ -176,7 +176,7 @@ const LeadFormModal = ({ isOpen, onClose }) => {
             </p>
 
             <h3 className="text-xl md:text-3xl font-bold leading-tight">
-              Visit Casagrand Casablanca
+              Visit Casagrand Moondance
             </h3>
 
             <p className="mt-4 text-sm leading-7 text-zinc-300">
@@ -198,7 +198,7 @@ const LeadFormModal = ({ isOpen, onClose }) => {
 
           <div className="mb-7 pr-12">
             <p className="text-xs font-bold uppercase tracking-[3px] text-[var(--accent)]">
-              Casagrand Casablanca
+              Casagrand Moondance
             </p>
 
             <h2 className="mt-3 text-2xl font-extrabold leading-tight text-zinc-950 md:text-3xl">
