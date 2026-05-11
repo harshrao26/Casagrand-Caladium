@@ -56,11 +56,13 @@ const OfferVariationThree = () => {
         </div>
 
         <div className="overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
-          
+           <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[140px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03),transparent,rgba(168,117,34,0.04))]" />
+
 
           {/* Desktop Table */}
           <div className="hidden lg:block">
-            <div className="grid grid-cols-[1.1fr_0.7fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] bg-zinc-950 text-center text-xs font-black uppercase tracking-[1px] text-white">
+            <div className="grid grid-cols-[1.1fr_0.7fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] bg-[var(--secondary-1)]  text-center text-xs font-black uppercase tracking-[1px] text-white">
               <div className="border-t border-white/10 p-4">Project Name</div>
               <div className="border-t border-l border-white/10 p-4">BHK</div>
               <div className="border-t border-l border-white/10 p-4">

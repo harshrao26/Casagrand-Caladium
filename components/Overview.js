@@ -26,7 +26,7 @@ const Overview = () => {
     { icon: Building2, value: "504", label: "Apartment Homes" },
     { icon: Trees, value: "8.25", label: "Acres" },
     { icon: Club, value: "3", label: "Residential Wings" },
-    { icon: Home, value: "1-3 BHK", label: "Residences" },
+    { icon: Home, value: "2-3 BHK", label: "Residences" },
   ];
 
   return (
@@ -113,7 +113,7 @@ const Overview = () => {
         >
           <div className="absolute left-0 top-12 h-[360px] w-[68%] overflow-hidden rounded-[34px] shadow-[0_35px_90px_rgba(0,0,0,0.18)]">
             <img
-              src="/prop/Copy of Aerial Night.webp"
+              src="/indoor-images/Copy of s15.jpg"
               alt="Casagrand Moondance Aerial View"
               className="h-full w-full object-cover"
             />
@@ -121,7 +121,7 @@ const Overview = () => {
 
           <div className="absolute right-0 top-0 h-[270px] w-[46%] overflow-hidden rounded-[30px] border-[8px] border-white shadow-[0_30px_80px_rgba(0,0,0,0.16)]">
             <img
-              src="/prop/Copy of Clubhouse Dusk.webp"
+              src="/indoor-images/Copy of s34.jpg"
               alt="Casagrand Moondance Clubhouse"
               className="h-full w-full object-cover"
             />
@@ -129,7 +129,7 @@ const Overview = () => {
 
           <div className="absolute bottom-0 right-8 h-[300px] w-[58%] overflow-hidden rounded-[34px] border-[8px] border-white shadow-[0_30px_80px_rgba(0,0,0,0.18)]">
             <img
-              src="/prop/Copy of Main Entrance.webp"
+              src="/indoor-images/Copy of s14.jpg"
               alt="Casagrand Moondance Main Entrance"
               className="h-full w-full object-cover"
             />

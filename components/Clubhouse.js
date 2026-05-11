@@ -552,8 +552,11 @@ export const ClubhouseVariationSeven = () => {
       id="communities"
       className="relative bg-[#F4EFE3] overflow-hidden  px-4 py-8 md:py-12 "
     >
+       <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[140px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03),transparent,rgba(168,117,34,0.04))]" />
+
       <div className="mx-auto max-w-7xl">
-        <div className="grid overflow-hidden rounded-[44px] bg-[#111111] lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid overflow-hidden rounded-[44px] bg-[var(--secondary-1)]  lg:grid-cols-[1.1fr_0.9fr]">
           <div className="p-6 text-white md:p-12">
             <h2 className="section-eyebrow">Grand Lifestyle</h2>
 
@@ -592,7 +595,7 @@ export const ClubhouseVariationSeven = () => {
 
           <div className="relative min-h-[520px]">
             <img
-              src="/prop/Copy of Clubhouse Dusk.webp"
+              src="/indoor-images/Copy of s31.jpg"
               alt="Clubhouse"
               className="absolute inset-0 h-full w-full object-cover"
             />
