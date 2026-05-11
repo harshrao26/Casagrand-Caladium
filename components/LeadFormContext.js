@@ -172,7 +172,7 @@ const LeadFormModal = ({ isOpen, onClose }) => {
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
             <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-2 text-xs font-bold uppercase tracking-[2px] text-white">
               <MapPin size={14} />
-              Kanakapura Road
+              Kumbalgodu
             </p>
 
             <h3 className="text-xl md:text-3xl font-bold leading-tight">

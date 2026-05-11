@@ -29,9 +29,9 @@ const clubhouseFeatures = [
 ];
 
 const stats = [
-  { value: ""8.25", label: "Acres" },
-  { value: ""504", label: "Homes" },
-  { value: "100+", label: "Lifestyle Amenities" },
+  { value: "8.25", label: "Acres" },
+  { value: "504", label: "Homes" },
+  { value: "1-3", label: "BHK Homes" },
 ];
 
 const images = [
@@ -79,9 +79,8 @@ export const ClubhouseVariationOne = () => {
 
           <h3 className="section-title mb-6">
             Low-Rise Community Life. <br />
-            26,000 Sq.ft{" "}
             <span className="text-[var(--accent)] text-outline">
-              Sports Clubhouse.
+              Sports & Leisure Spaces.
             </span>
           </h3>
 
@@ -284,9 +283,9 @@ export const ClubhouseVariationThree = () => {
             </h3>
 
             <p className="mb-8 text-sm leading-7 text-zinc-600 md:text-base">
-              Casagrand Moondance offers a grand low-rise community spaces and an
-              exclusive outdoor sports and leisure spaces with thoughtfully designed
-              indoor and outdoor lifestyle amenities.
+              Casagrand Moondance offers low-rise community living with
+              thoughtfully designed indoor recreation, outdoor sports, wellness,
+              kids, co-working, and leisure spaces.
             </p>
 
             <div className="mb-8 space-y-4">
