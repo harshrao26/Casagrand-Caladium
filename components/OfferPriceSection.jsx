@@ -115,12 +115,12 @@ const OfferVariationThree = () => {
                       {item.project}
                     </p>
 
-                    <h3 className="mt-1 text-2xl font-black text-zinc-950">
+                    <h3 className="mt-1 text-lg md:text-2xl font-black text-zinc-950">
                       {item.type}
                     </h3>
                   </div>
 
-                  <span className="rounded-full bg-zinc-950 px-3.5 py-2 text-[10px] font-bold uppercase tracking-[1px] text-white">
+                  <span className="rounded-full bg-[#C98D2D] px-3.5 py-2 text-[10px] font-bold uppercase tracking-[1px] text-white">
                     {item.saving}
                   </span>
                 </div>
@@ -153,7 +153,7 @@ const OfferVariationThree = () => {
                     </h4>
                   </div>
 
-                  <div className="rounded-2xl border border-zinc-100 bg-zinc-950 p-3">
+                  <div className="rounded-2xl border border-zinc-100 bg-[#3B2F61] p-3">
                     <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-400">
                       Saving
                     </p>
@@ -171,7 +171,7 @@ const OfferVariationThree = () => {
           <button
             type="button"
             onClick={openLeadForm}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--accent)] px-7 py-3.5 text-xs font-bold uppercase tracking-[1.4px] text-white transition hover:bg-zinc-950"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--accent)] px-7 py-3.5 text-xs font-bold uppercase tracking-[1.4px] text-white transition hover:bg-[#3B2F61]"
           >
             <Download size={16} />
             Get Offer Details

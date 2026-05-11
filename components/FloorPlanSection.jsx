@@ -242,7 +242,7 @@ const PreviewModal = ({ previewImage, setPreviewImage }) => {
       <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/15 blur-[140px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-8 grid   md:grid-cols-[0.9fr_1.1fr] md:items-end">
+        <div className="mb-4 md:mb-8 grid   md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
             <p className="text-xs font-bold uppercase tracking-[4px] text-[var(--accent)]">
               Floor Plans
@@ -320,7 +320,7 @@ const PreviewModal = ({ previewImage, setPreviewImage }) => {
               Selected Category
             </p>
 
-            <h3 className="mt-1 text-xl font-black text-zinc-950 md:text-2xl">
+            <h3 className="mt-1 md:text-xl font-black text-zinc-950 md:text-2xl">
               {activeGroup?.label} Plans
             </h3>
           </div>
