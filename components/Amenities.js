@@ -68,6 +68,7 @@ const AmenitiesVariationSeven = () => {
   */
   const [isMobile, setIsMobile] = useState(false);
   const [activePage, setActivePage] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const checkScreen = () => {
@@ -89,16 +90,15 @@ const AmenitiesVariationSeven = () => {
   useEffect(() => {
     setActivePage(0);
   }, [itemsPerPage]);
-
   useEffect(() => {
-    if (pages.length <= 1) return;
+    if (pages.length <= 1 || isPaused) return;
 
     const interval = setInterval(() => {
       setActivePage((prev) => (prev + 1) % pages.length);
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [pages.length]);
+  }, [pages.length, isPaused]);
 
   return (
     <section
@@ -108,7 +108,7 @@ const AmenitiesVariationSeven = () => {
       <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[130px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div className="mb-10 flex flex-col justify-between   md:flex-row md:items-end">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[4px] text-[var(--accent)]">
               Amenities
@@ -127,7 +127,11 @@ const AmenitiesVariationSeven = () => {
         </div>
 
         {/* Slider */}
-        <div className="overflow-hidden rounded-[36px] border border-zinc-200 bg-zinc-200">
+        <div
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          className="overflow-hidden rounded-[36px] border border-zinc-200 bg-zinc-200"
+        >
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{

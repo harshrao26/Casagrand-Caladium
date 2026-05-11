@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect, useRef } from "react";
 import {
   Building2,
   Home,
@@ -196,12 +196,33 @@ const PreviewModal = ({ previewImage, setPreviewImage }) => {
 
 /* =====================================================
    VARIATION 1 — Clean Light Tabs + Cards
-===================================================== */
-
-export const FloorPlanVariationOne = () => {
+===================================================== */export const FloorPlanVariationOne = () => {
   const { openLeadForm } = useLeadForm();
   const [activeTab, setActiveTab] = useState("2bhk");
   const [previewImage, setPreviewImage] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Preload all images in the background
+  useEffect(() => {
+    floorPlanGroups.forEach((group) => {
+      group.images.forEach((image) => {
+        const img = new Image();
+        img.src = image.src;
+      });
+    });
+  }, []);
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const activeGroup = useMemo(
     () => floorPlanGroups.find((group) => group.id === activeTab),
@@ -239,37 +260,59 @@ export const FloorPlanVariationOne = () => {
           </p>
         </div>
 
-      
+        {/* Dropdown for Mobile & Desktop */}
+        <div ref={dropdownRef} className="relative mb-8 max-w-xs md:max-w-md">
+          <button
+            type="button"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            className="flex w-full items-center justify-between rounded-2xl border border-zinc-200 bg-white px-6 py-4 text-sm font-bold uppercase tracking-[1px] text-zinc-900 shadow-sm transition hover:border-[var(--accent)]/40"
+          >
+            <div className="flex items-center gap-3">
+              {activeGroup && <activeGroup.icon size={18} className="text-[var(--accent)]" />}
+              {activeGroup?.label} Plans
+            </div>
+            <ArrowRight
+              size={18}
+              className={`text-zinc-400 transition-transform duration-300 ${isDropdownOpen ? "rotate-90" : ""}`}
+            />
+          </button>
 
-        <div className="mb-5 flex gap-2 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mb-7">
-          {floorPlanGroups.map((group) => {
-            const Icon = group.icon;
-            const isActive = activeTab === group.id;
+          {isDropdownOpen && (
+            <div className="absolute left-0 top-full z-[100] mt-2 w-full overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-2xl backdrop-blur-xl">
+              <div className="max-h-[300px] overflow-y-auto p-2">
+                {floorPlanGroups.map((group) => {
+                  const Icon = group.icon;
+                  const isActive = activeTab === group.id;
 
-            return (
-              <button
-                key={group.id}
-                type="button"
-                onClick={() => setActiveTab(group.id)}
-                className={`flex shrink-0 items-center gap-2 rounded-full px-4 py-3 text-xs font-bold uppercase tracking-[1px] transition ${
-                  isActive
-                    ? "bg-zinc-950 text-white"
-                    : "bg-white text-zinc-600 hover:bg-[var(--accent)] hover:text-white"
-                }`}
-              >
-                <Icon size={15} />
-                {group.label}
-                <span
-                  className={`rounded-full px-2 py-0.5 text-[10px] ${
-                    isActive ? "bg-white/15 text-white" : "bg-zinc-100"
-                  }`}
-                >
-                  {group.images.length}
-                </span>
-              </button>
-            );
-          })}
+                  return (
+                    <button
+                      key={group.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveTab(group.id);
+                        setIsDropdownOpen(false);
+                      }}
+                      className={`flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left text-xs font-bold uppercase tracking-[1px] transition ${
+                        isActive
+                          ? "bg-zinc-950 text-white"
+                          : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-950"
+                      }`}
+                    >
+                      <span className="flex items-center gap-3">
+                        <Icon size={16} className={isActive ? "text-[var(--accent)]" : "text-zinc-400"} />
+                        {group.label}
+                      </span>
+                      <span className={`rounded-full px-2 py-0.5 text-[10px] ${isActive ? "bg-white/10" : "bg-zinc-100"}`}>
+                        {group.images.length}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
+
 
         <div className="mb-5 flex flex-col gap-3 rounded-[26px] bg-white p-4 shadow-sm md:mb-6 md:flex-row md:items-center md:justify-between md:p-5">
           <div>

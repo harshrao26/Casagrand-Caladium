@@ -33,10 +33,9 @@ const OfferVariationThree = () => {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden bg-[#faf7f1] px-4 py-10 md:py-16"
+      className="relative overflow-hidden b g-[#faf7f1] py-10"
     >
-      <div className="absolute left-1/2 top-0 h-[440px] w-[440px] -translate-x-1/2 rounded-full bg-[var(--accent)]/15 blur-[120px]" />
-
+ 
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mx-auto mb-8 max-w-3xl text-center">
           <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--accent)]/20 bg-[var(--accent)]/10 px-4 py-2 text-xs font-bold uppercase tracking-[2px] text-[var(--accent)]">
@@ -57,31 +56,19 @@ const OfferVariationThree = () => {
 
         <div className="overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
            <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[140px]" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03),transparent,rgba(168,117,34,0.04))]" />
+      <div className="absolute inset-0 bg -[linear-gradient(to_bottom,rgba(255,255,255,0.03),transparent,rgba(168,117,34,0.04))]" />
 
 
           {/* Desktop Table */}
           <div className="hidden lg:block">
-            <div className="grid grid-cols-[1.1fr_0.7fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] bg-[var(--secondary-1)]  text-center text-xs font-black uppercase tracking-[1px] text-white">
+            <div className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr_1.1fr] bg-[var(--secondary-1)]  text-center text-xs font-black uppercase tracking-[1px] text-white">
               <div className="border-t border-white/10 p-4">Project Name</div>
               <div className="border-t border-l border-white/10 p-4">BHK</div>
-              <div className="border-t border-l border-white/10 p-4">
-                Early Bird / Sq.ft
-              </div>
               <div className="border-t border-l border-white/10 p-4">
                 Launch / Sq.ft
               </div>
               <div className="border-t border-l border-white/10 p-4">
-                Area From
-              </div>
-              <div className="border-t border-l border-white/10 p-4">
-                Area To
-              </div>
-              <div className="border-t border-l border-white/10 p-4">
-                Early From
-              </div>
-              <div className="border-t border-l border-white/10 p-4">
-                Early To
+                Area (Sq.ft)
               </div>
               <div className="border-t border-l border-white/10 p-4">
                 Launch Price
@@ -89,15 +76,10 @@ const OfferVariationThree = () => {
             </div>
 
             {offers.map((item, index) => {
-              const [areaFrom, areaTo] = item.area
-                .replace(" Sq.ft", "")
-                .split(" - ");
-              const [earlyFrom, earlyTo] = item.earlyBirdPrice.split(" - ");
-
               return (
                 <div
                   key={index}
-                  className="grid grid-cols-[1.1fr_0.7fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] border-t border-zinc-200 text-center text-sm text-zinc-950 transition hover:bg-[var(--accent)]/5"
+                  className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr_1.1fr] border-t border-zinc-200 text-center text-sm text-zinc-950 transition hover:bg-[var(--accent)]/5"
                 >
                   <div className="bg-[var(--accent)]/10 p-4 font-bold uppercase text-zinc-950">
                     {item.project}
@@ -107,28 +89,12 @@ const OfferVariationThree = () => {
                     {item.type}
                   </div>
 
-                  <div className="border-l border-zinc-200 bg-[var(--accent)]/10 p-4 font-black text-[var(--accent)]">
-                    4999
-                  </div>
-
                   <div className="border-l border-zinc-200 bg-white p-4 font-bold text-zinc-700">
                     5199
                   </div>
 
                   <div className="border-l border-zinc-200 bg-zinc-50 p-4 font-semibold">
-                    {areaFrom}
-                  </div>
-
-                  <div className="border-l border-zinc-200 bg-zinc-50 p-4 font-semibold">
-                    {areaTo}
-                  </div>
-
-                  <div className="border-l border-zinc-200 bg-[var(--accent)]/10 p-4 font-black text-[var(--accent)]">
-                    {earlyFrom}
-                  </div>
-
-                  <div className="border-l border-zinc-200 bg-[var(--accent)]/10 p-4 font-black text-[var(--accent)]">
-                    {earlyTo}
+                    {item.area}
                   </div>
 
                   <div className="border-l border-zinc-200 bg-zinc-50 p-4 font-bold text-zinc-800">
@@ -160,15 +126,6 @@ const OfferVariationThree = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-2.5">
-                  <div className="rounded-2xl border border-[var(--accent)]/20 bg-[var(--accent)]/10 p-3">
-                    <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-500">
-                      Early Bird
-                    </p>
-                    <h4 className="mt-1.5 text-base font-black text-[var(--accent)]">
-                      {item.earlyBirdRate}
-                    </h4>
-                  </div>
-
                   <div className="rounded-2xl border border-zinc-100 bg-zinc-50 p-3">
                     <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-500">
                       Launch
@@ -184,15 +141,6 @@ const OfferVariationThree = () => {
                     </p>
                     <h4 className="mt-1.5 text-xs font-bold leading-5 text-zinc-950">
                       {item.area}
-                    </h4>
-                  </div>
-
-                  <div className="rounded-2xl border border-[var(--accent)]/20 bg-[var(--accent)]/10 p-3">
-                    <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-500">
-                      Offer Price
-                    </p>
-                    <h4 className="mt-1.5 text-xs font-black leading-5 text-[var(--accent)]">
-                      {item.earlyBirdPrice}
                     </h4>
                   </div>
 
