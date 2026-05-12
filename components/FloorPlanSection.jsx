@@ -18,144 +18,83 @@ import { useLeadForm } from "./LeadFormContext";
 
 const floorPlanGroups = [
   {
-    id: "basement",
-    label: "Basement",
-    icon: Layers3,
+    id: "unit-master",
+    label: "Unit Master",
+    icon: Home,
     images: [
-      {
-        title: "Basement Floor Plan",
-        src: "/flooreplan/BASEMENT FLOOR PLAN/JPG/BASEMENT FLOOR PLAN.jpg",
-      },
+      { title: "Sheet 1", src: "/Floorplans/unit/sheet-1.jpg" },
+      { title: "Sheet 2", src: "/Floorplans/unit/sheet-2.jpg" },
+      { title: "Sheet 3", src: "/Floorplans/unit/sheet-3.jpg" },
+      { title: "Sheet 4", src: "/Floorplans/unit/sheet-4.jpg" },
+      { title: "Sheet 5", src: "/Floorplans/unit/sheet-5.jpg" },
+      { title: "Sheet 6", src: "/Floorplans/unit/sheet-6.jpg" },
+      { title: "Sheet 7", src: "/Floorplans/unit/sheet-7.jpg" },
+      { title: "Sheet 8", src: "/Floorplans/unit/sheet-8.jpg" },
+      { title: "Sheet 9", src: "/Floorplans/unit/sheet-9.jpg" },
+      { title: "Sheet 10", src: "/Floorplans/unit/sheet-10.jpg" },
+      { title: "Sheet 11", src: "/Floorplans/unit/sheet-11.jpg" },
+      { title: "Sheet 12", src: "/Floorplans/unit/sheet-12.jpg" },
     ],
   },
   {
-    id: "clubhouse",
-    label: "Club House",
+    id: "clubhouse-plan",
+    label: "Clubhouse Plan",
     icon: Building2,
     images: [
       {
-        title: "Ground Floor Plan",
-        src: "/flooreplan/CLUB HOUSE/JPG/GROUND FLOOR PLAN.jpg",
+        title: "Ground Floor",
+        src: "/Floorplans/clubhouse_plan/ground-floor.jpg",
       },
       {
-        title: "First Floor Plan",
-        src: "/flooreplan/CLUB HOUSE/JPG/FIRST FLOOR PLAN.jpg",
+        title: "First Floor",
+        src: "/Floorplans/clubhouse_plan/first-floor.jpg",
       },
       {
-        title: "Second Floor Plan",
-        src: "/flooreplan/CLUB HOUSE/JPG/SECOND FLOOR PLAN.jpg",
+        title: "Second Floor",
+        src: "/Floorplans/clubhouse_plan/second-floor.jpg",
       },
       {
-        title: "Third Floor Plan",
-        src: "/flooreplan/CLUB HOUSE/JPG/THIRD FLOOR PLAN.jpg",
-      },
-      {
-        title: "Terrace Floor Plan",
-        src: "/flooreplan/CLUB HOUSE/JPG/TERRACE FLOOR PLAN.jpg",
+        title: "Terrace",
+        src: "/Floorplans/clubhouse_plan/terrace.jpg",
       },
     ],
   },
   {
-    id: "floor-plan",
-    label: "Floor Plan",
-    icon: Layers3,
-    images: [
-      {
-        title: "First Floor Plan",
-        src: "/flooreplan/FLOOR PLAN/JPG/FIRST FLOOR PLAN.jpg",
-      },
-      {
-        title: "Second Floor Plan",
-        src: "/flooreplan/FLOOR PLAN/JPG/SECOND FLOOR PLAN.jpg",
-      },
-      {
-        title: "Third Floor Plan",
-        src: "/flooreplan/FLOOR PLAN/JPG/THIRD FLOOR PLAN.jpg",
-      },
-      {
-        title: "Fourth Floor Plan",
-        src: "/flooreplan/FLOOR PLAN/JPG/FOURTH FLOOR PLAN.jpg",
-      },
-      {
-        title: "Terrace Floor Plan",
-        src: "/flooreplan/FLOOR PLAN/JPG/TERRACE FLOOR PLAN.jpg",
-      },
-    ],
-  },
-  {
-    id: "site-plan",
-    label: "Site Plan",
+    id: "master-plan",
+    label: "Master Plan",
     icon: Map,
     images: [
       {
-        title: "Site Plan",
-        src: "/flooreplan/SITE PLAN/JPG/SITE PLAN.jpg",
+        title: "Master Plan",
+        src: "/Floorplans/master_plan/master-plan.jpg",
       },
-    ],
-  },
-  {
-    id: "1bhk",
-    label: "1 BHK",
-    icon: Home,
-    images: [
-      { title: "AG14", src: "/flooreplan/UNIT PLAN/1BHK/JPG/AG14.jpg" },
-      { title: "AG22", src: "/flooreplan/UNIT PLAN/1BHK/JPG/AG22.jpg" },
-      { title: "BG03", src: "/flooreplan/UNIT PLAN/1BHK/JPG/BG03.jpg" },
-      { title: "BG17", src: "/flooreplan/UNIT PLAN/1BHK/JPG/BG17.jpg" },
-      { title: "BG25", src: "/flooreplan/UNIT PLAN/1BHK/JPG/BG25.jpg" },
-      { title: "CG14", src: "/flooreplan/UNIT PLAN/1BHK/JPG/CG14.jpg" },
-    ],
-  },
-  {
-    id: "2bhk",
-    label: "2 BHK",
-    icon: Home,
-    images: [
-      { title: "A122", src: "/flooreplan/UNIT PLAN/2BHK/JPG/A122.jpg" },
-      { title: "AG17", src: "/flooreplan/UNIT PLAN/2BHK/JPG/AG17.jpg" },
-      { title: "AG18", src: "/flooreplan/UNIT PLAN/2BHK/JPG/AG18.jpg" },
-      { title: "AG20", src: "/flooreplan/UNIT PLAN/2BHK/JPG/AG20.jpg" },
-      { title: "AG28", src: "/flooreplan/UNIT PLAN/2BHK/JPG/AG28.jpg" },
-      { title: "B103", src: "/flooreplan/UNIT PLAN/2BHK/JPG/B103.jpg" },
-      { title: "BG10", src: "/flooreplan/UNIT PLAN/2BHK/JPG/BG10.jpg" },
-      { title: "BG12", src: "/flooreplan/UNIT PLAN/2BHK/JPG/BG12.jpg" },
-      { title: "BG13", src: "/flooreplan/UNIT PLAN/2BHK/JPG/BG13.jpg" },
-      { title: "BG24", src: "/flooreplan/UNIT PLAN/2BHK/JPG/BG24.jpg" },
-      { title: "CG02", src: "/flooreplan/UNIT PLAN/2BHK/JPG/CG02.jpg" },
-      { title: "CG11", src: "/flooreplan/UNIT PLAN/2BHK/JPG/CG11.jpg" },
-      { title: "CG18", src: "/flooreplan/UNIT PLAN/2BHK/JPG/CG18.jpg" },
-      { title: "CG25", src: "/flooreplan/UNIT PLAN/2BHK/JPG/CG25.jpg" },
       {
-        title: "Model Flat - AG17",
-        src: "/flooreplan/UNIT PLAN/2BHK/JPG/MODEL FLAT - AG17.jpg",
+        title: "Basement Level 1",
+        src: "/Floorplans/master_plan/basement-1.jpg",
+      },
+      {
+        title: "Basement Level 2",
+        src: "/Floorplans/master_plan/basement-2.jpg",
       },
     ],
   },
   {
-    id: "3bhk",
-    label: "3 BHK",
-    icon: Home,
+    id: "master",
+    label: "Master",
+    icon: Layers3,
     images: [
-      { title: "A101", src: "/flooreplan/UNIT PLAN/3BHK/JPG/A101.jpg" },
-      { title: "AG01", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG01.jpg" },
-      { title: "AG03", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG03.jpg" },
-      { title: "AG05", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG05.jpg" },
-      { title: "AG08", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG08.jpg" },
-      { title: "AG09", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG09.jpg" },
-      { title: "AG10", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG10.jpg" },
-      { title: "AG11", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG11.jpg" },
-      { title: "AG16", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG16.jpg" },
-      { title: "AG24", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG24.jpg" },
-      { title: "AG26", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG26.jpg" },
-      { title: "AG34", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG34.jpg" },
-      { title: "AG37", src: "/flooreplan/UNIT PLAN/3BHK/JPG/AG37.jpg" },
-      { title: "B101", src: "/flooreplan/UNIT PLAN/3BHK/JPG/B101.jpg" },
-      { title: "BG01", src: "/flooreplan/UNIT PLAN/3BHK/JPG/BG01.jpg" },
-      { title: "BG28", src: "/flooreplan/UNIT PLAN/3BHK/JPG/BG28.jpg" },
-      { title: "CG19", src: "/flooreplan/UNIT PLAN/3BHK/JPG/CG19.jpg" },
+      { title: "Master 1", src: "/Floorplans/master/master-1.jpg" },
+      { title: "Master 2", src: "/Floorplans/master/master-2.jpg" },
+      { title: "Master 3", src: "/Floorplans/master/master-3.jpg" },
+      { title: "Master 4", src: "/Floorplans/master/master-4.jpg" },
+      { title: "Master 5", src: "/Floorplans/master/master-5.jpg" },
+      { title: "Master 6", src: "/Floorplans/master/master-6.jpg" },
+      { title: "Master 7", src: "/Floorplans/master/master-7.jpg" },
+      { title: "Master 8", src: "/Floorplans/master/master-8.jpg" },
+      { title: "Master 9", src: "/Floorplans/master/master-9.jpg" },
+      { title: "Master 10", src: "/Floorplans/master/master-10.jpg" },
     ],
   },
-   
 ];
 
 const PreviewModal = ({ previewImage, setPreviewImage }) => {
@@ -198,7 +137,7 @@ const PreviewModal = ({ previewImage, setPreviewImage }) => {
    VARIATION 1 — Clean Light Tabs + Cards
 ===================================================== */export const FloorPlanVariationOne = () => {
   const { openLeadForm } = useLeadForm();
-  const [activeTab, setActiveTab] = useState("2bhk");
+  const [activeTab, setActiveTab] = useState("unit-master");
   const [previewImage, setPreviewImage] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -377,7 +316,7 @@ const PreviewModal = ({ previewImage, setPreviewImage }) => {
 
 export const FloorPlanVariationTwo = () => {
   const { openLeadForm } = useLeadForm();
-  const [activeTab, setActiveTab] = useState("2bhk");
+  const [activeTab, setActiveTab] = useState("unit-master");
   const [previewImage, setPreviewImage] = useState(null);
 
   const activeGroup = useMemo(
@@ -506,7 +445,7 @@ export const FloorPlanVariationTwo = () => {
 
 export const FloorPlanVariationThree = () => {
   const { openLeadForm } = useLeadForm();
-  const [activeTab, setActiveTab] = useState("2bhk");
+  const [activeTab, setActiveTab] = useState("unit-master");
   const [previewImage, setPreviewImage] = useState(null);
 
   const activeGroup = useMemo(
@@ -651,7 +590,7 @@ export const FloorPlanVariationThree = () => {
 
 export const FloorPlanVariationFour = () => {
   const { openLeadForm } = useLeadForm();
-  const [activeTab, setActiveTab] = useState("2bhk");
+  const [activeTab, setActiveTab] = useState("unit-master");
   const [previewImage, setPreviewImage] = useState(null);
 
   const activeGroup = useMemo(
@@ -770,7 +709,7 @@ export const FloorPlanVariationFour = () => {
 
 export const FloorPlanVariationFive = () => {
   const { openLeadForm } = useLeadForm();
-  const [activeTab, setActiveTab] = useState("2bhk");
+  const [activeTab, setActiveTab] = useState("unit-master");
   const [activeImage, setActiveImage] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
 

@@ -127,7 +127,7 @@ export const ClubhouseVariationSeven = () => {
 
           <div className="relative min-h-[520px]">
             <img
-              src="/assets/5.jpeg"
+              src="/elevation/6.jpeg"
               alt="Casagrand Caladium Lifestyle Amenities"
               className="absolute inset-0 h-full w-full object-cover"
             />

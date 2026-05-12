@@ -114,7 +114,7 @@ const Overview = () => {
         >
           <div className="absolute left-0 top-12 h-[360px] w-[68%] overflow-hidden rounded-[34px] shadow-[0_35px_90px_rgba(0,0,0,0.18)]">
             <img
-              src="/assets/3.jpeg"
+              src="/elevation/5.jpeg"
               alt="Casagrand Caladium Exterior View"
               className="h-full w-full object-cover"
             />
@@ -122,7 +122,7 @@ const Overview = () => {
 
           <div className="absolute right-0 top-0 h-[270px] w-[46%] overflow-hidden rounded-[30px] border-[8px] border-white shadow-[0_30px_80px_rgba(0,0,0,0.16)]">
             <img
-              src="/assets/1.jpeg"
+              src="/elevation/1.jpeg"
               alt="Casagrand Caladium Clubhouse"
               className="h-full w-full object-cover"
             />
@@ -130,7 +130,7 @@ const Overview = () => {
 
           <div className="absolute bottom-0 right-8 h-[300px] w-[58%] overflow-hidden rounded-[34px] border-[8px] border-white shadow-[0_30px_80px_rgba(0,0,0,0.18)]">
             <img
-              src="/assets/2.jpeg"
+              src="/elevation/2.jpeg"
               alt="Casagrand Caladium Lifestyle Amenities"
               className="h-full w-full object-cover"
             />
