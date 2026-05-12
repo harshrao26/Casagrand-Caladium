@@ -28,9 +28,10 @@ const ContactMobileVariationFour = () => {
               </h2>
 
               <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-300 md:mt-5 md:text-base md:leading-7 md:text-zinc-600">
-                Experience spacious living at Casagrand Caladium Upper Kharadi.
-                Fill out the form and our representative will get back to you
-                shortly with brochure, pricing, and visit scheduling details.
+                Experience premium 2 & 3 BHK living at Casagrand Caladium,
+                Upper Kharadi, Pune. Fill out the form and our representative
+                will get back to you shortly with brochure, pricing,
+                availability, and visit scheduling details.
               </p>
             </div>
 
@@ -58,7 +59,7 @@ const ContactMobileVariationFour = () => {
 
             <div className="space-y-3 p-5 md:p-8 lg:p-10 lg:pt-0">
               <a
-                href="mailto:info@casagrandkumbalgodu.com"
+                href="mailto:info@casagrandcaladium.com"
                 className="flex items-center gap-4 rounded-2xl border border-zinc-100 bg-zinc-50 p-4 transition hover:border-[var(--accent)]/30 hover:bg-[var(--accent)]/5 md:gap-5 md:rounded-3xl md:p-5"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[var(--accent)] shadow-sm md:h-14 md:w-14 md:rounded-2xl">
@@ -70,7 +71,7 @@ const ContactMobileVariationFour = () => {
                     Email Us
                   </p>
                   <p className="mt-1 truncate text-sm font-bold text-zinc-950 md:text-base">
-                    info@casagrandkumbalgodu.com
+                    info@casagrandcaladium.com
                   </p>
                 </div>
               </a>
@@ -85,8 +86,8 @@ const ContactMobileVariationFour = () => {
                     Location
                   </p>
                   <p className="mt-1 text-sm font-bold leading-5 text-zinc-950 md:text-base md:leading-6">
-                    VFF2+QRJ, off Mysore Road, Upper Kharadi, Pune, Karnataka
-                    560074
+                    Casagrand Caladium, Upper Kharadi / Wagholi, Pune,
+                    Maharashtra
                   </p>
                 </div>
               </div>
@@ -107,8 +108,9 @@ const ContactMobileVariationFour = () => {
                 </h3>
 
                 <p className="mt-2 text-sm leading-6 text-zinc-600 md:mt-3 md:text-base md:leading-7">
-                  Share your details once and our team will help you with
-                  brochure, pricing, availability, and site visit scheduling.
+                  Share your details once and our team will help you with the
+                  brochure, current price details, floor plans, availability,
+                  and site visit scheduling for Casagrand Caladium.
                 </p>
               </div>
 
