@@ -8,13 +8,13 @@ const Videos = () => {
 
   const tabs = [
     {
-      title: "Top 6 Reasons to Buy",
+      title: "Top  Reasons to Buy",
       desc: "A quick overview of the project’s strongest lifestyle and investment highlights.",
       videoUrl: "https://www.youtube.com/embed/hgDJPI8wFpo?start=10",
     },
     {
-      title: "Phase 2 Walkthrough",
-      desc: "Explore the Phase 2 project visuals through a detailed walkthrough video.",
+      title: "Walkthrough",
+      desc: "Explore the project visuals through a detailed walkthrough video.",
       videoUrl: "https://www.youtube.com/embed/aR74le2OvPU",
     },
   ];
