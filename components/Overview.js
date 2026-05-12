@@ -16,16 +16,16 @@ const Overview = () => {
   const { openLeadForm } = useLeadForm();
 
   const highlights = [
-    "New launch residential community off Mysore Road",
-    "504 homes planned across 8.25 acres",
-    "Three low-rise B+G+4 residential wings",
-    "Spacious 1, 2 and 3 BHK apartments",
+    "Singapore-styled premium residential community at Upper Kharadi",
+    "334 premium residences planned across 2.8 acres",
+    "2+ acres of open space with 30,000 sq.ft. of greenery",
+    "Spacious 2 & 3 BHK apartments with modern lifestyle amenities",
   ];
 
   const stats = [
-    { icon: Building2, value: "504", label: "Apartment Homes" },
-    { icon: Trees, value: "8.25", label: "Acres" },
-    { icon: Club, value: "3", label: "Residential Wings" },
+    { icon: Building2, value: "334", label: "Premium Homes" },
+    { icon: Trees, value: "2.8", label: "Acres" },
+    { icon: Club, value: "110+", label: "Amenities" },
     { icon: Home, value: "2-3 BHK", label: "Residences" },
   ];
 
@@ -44,30 +44,31 @@ const Overview = () => {
           <h2 className="section-eyebrow">The Grand Overview</h2>
 
           <h3 className="section-title mb-7">
-            Crafted for Living <br />
+            Crafted for Elevated Living <br />
             at{" "}
             <span className="text-[var(--accent)] text-outline">
-              Casagrand Moondance.
+              Casagrand Caladium.
             </span>
           </h3>
 
           <div className="mb-8 space-y-5 text-sm leading-7 text-zinc-600 md:text-base">
             <p>
               <span className="font-bold text-zinc-900">
-                Casagrand Moondance
+                Casagrand Caladium
               </span>{" "}
-              Kumbalgodu is a new launch residential community located off
-              Mysore Road, Bengaluru. Spread across 8.25 acres, the project
-              brings together low-rise planning, spacious homes, landscaped open
-              areas, and convenient access to the growing south-west Bengaluru
-              corridor.
+              is a Singapore-styled premium residential community located at
+              Upper Kharadi, Pune. Spread across 2.8 acres, the project brings
+              together elegant architecture, landscaped open spaces, modern
+              lifestyle amenities, and excellent connectivity to Pune’s growing
+              IT and residential corridor.
             </p>
 
             <p>
-              The community features 504 thoughtfully planned 1, 2 and 3 BHK
-              apartments across three B+G+4 wings. Homes range from compact 1
-              BHK layouts to spacious 3 BHK Superior residences, with apartment
-              sizes extending up to 1,890 sq.ft.
+              The community features 334 thoughtfully planned 2 and 3 BHK
+              apartments designed for comfort, light, ventilation, and privacy.
+              With 2+ acres of open space, 30,000 sq.ft. of greenery, a grand
+              13,500 sq.ft. clubhouse, and 110+ lifestyle amenities, Casagrand
+              Caladium offers a refined urban living experience.
             </p>
           </div>
 
@@ -99,7 +100,7 @@ const Overview = () => {
             </button>
 
             <p className="text-center font-mono text-xs leading-5 text-zinc-400 sm:text-left">
-              RERA details are being updated
+              RERA: P52100080302
             </p>
           </div>
         </motion.div>
@@ -113,24 +114,24 @@ const Overview = () => {
         >
           <div className="absolute left-0 top-12 h-[360px] w-[68%] overflow-hidden rounded-[34px] shadow-[0_35px_90px_rgba(0,0,0,0.18)]">
             <img
-              src="/indoor-images/Copy of s15.jpg"
-              alt="Casagrand Moondance Aerial View"
+              src="/assets/3.jpeg"
+              alt="Casagrand Caladium Exterior View"
               className="h-full w-full object-cover"
             />
           </div>
 
           <div className="absolute right-0 top-0 h-[270px] w-[46%] overflow-hidden rounded-[30px] border-[8px] border-white shadow-[0_30px_80px_rgba(0,0,0,0.16)]">
             <img
-              src="/indoor-images/Copy of s34.jpg"
-              alt="Casagrand Moondance Clubhouse"
+              src="/assets/1.jpeg"
+              alt="Casagrand Caladium Clubhouse"
               className="h-full w-full object-cover"
             />
           </div>
 
           <div className="absolute bottom-0 right-8 h-[300px] w-[58%] overflow-hidden rounded-[34px] border-[8px] border-white shadow-[0_30px_80px_rgba(0,0,0,0.18)]">
             <img
-              src="/indoor-images/Copy of s14.jpg"
-              alt="Casagrand Moondance Main Entrance"
+              src="/assets/2.jpeg"
+              alt="Casagrand Caladium Lifestyle Amenities"
               className="h-full w-full object-cover"
             />
           </div>

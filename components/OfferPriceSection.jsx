@@ -6,24 +6,28 @@ import { useLeadForm } from "./LeadFormContext";
 
 const offers = [
   {
-    project: "Kumbalgodu",
+    project: "Casagrand Caladium",
     type: "2 BHK",
-    earlyBirdRate: "₹4,999",
-    launchRate: "₹5,199",
-    area: "1171 - 1470 Sq.ft",
-    earlyBirdPrice: "₹70L - ₹84L",
-    launchPrice: "₹72L - ₹86L",
-    saving: "Save up to ₹2L",
+    launchRate: "₹12,800*",
+    area: "937 - 1119 Sq.ft",
+    launchPrice: "₹1.20 Cr - ₹1.43 Cr",
+    saving: "Premium 2 BHK",
   },
   {
-    project: "Kumbalgodu",
+    project: "Casagrand Caladium",
     type: "3 BHK",
-    earlyBirdRate: "₹4,999",
-    launchRate: "₹5,199",
-    area: "1641 - 1866 Sq.ft",
-    earlyBirdPrice: "₹94L - ₹1.04Cr",
-    launchPrice: "₹97L - ₹1.08Cr",
-    saving: "Save up to ₹4L",
+    launchRate: "₹13,000*",
+    area: "1293 - 1295 Sq.ft",
+    launchPrice: "₹1.69 Cr Onwards",
+    saving: "Spacious 3 BHK",
+  },
+  {
+    project: "Casagrand Caladium",
+    type: "3 BHK",
+    launchRate: "₹13,200*",
+    area: "1296 - 1325 Sq.ft",
+    launchPrice: "₹1.72 Cr - ₹1.76 Cr",
+    saving: "Luxury 3 BHK",
   },
 ];
 
@@ -33,45 +37,43 @@ const OfferVariationThree = () => {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden b g-[#faf7f1] py-10"
+      className="relative overflow-hidden bg-[#faf7f1] py-10"
     >
- 
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mx-auto mb-8 max-w-3xl text-center">
           <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--accent)]/20 bg-[var(--accent)]/10 px-4 py-2 text-xs font-bold uppercase tracking-[2px] text-[var(--accent)]">
             <BadgePercent size={15} />
-            Launch Price Table
+            Price & Configuration
           </span>
 
           <h2 className="section-title">
-            Kumbalgodu{" "}
-            <span className="text-[var(--accent)]">Early Bird Offer</span>
+            Casagrand Caladium{" "}
+            <span className="text-[var(--accent)]">Price Details</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-600 md:text-base">
-            Compare early bird pricing with launch pricing and secure your
-            preferred unit at the offer price.
+            Explore thoughtfully planned 2 & 3 BHK residences at Upper Kharadi,
+            Pune with premium specifications, open spaces, and 110+ lifestyle
+            amenities.
           </p>
         </div>
 
         <div className="overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
-           <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[140px]" />
-      <div className="absolute inset-0 bg -[linear-gradient(to_bottom,rgba(255,255,255,0.03),transparent,rgba(168,117,34,0.04))]" />
-
+          <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[140px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03),transparent,rgba(168,117,34,0.04))]" />
 
           {/* Desktop Table */}
           <div className="hidden lg:block">
-            <div className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr_1.1fr] bg-[var(--secondary-1)]  text-center text-xs font-black uppercase tracking-[1px] text-white">
-              <div className="border-t border-white/10 p-4">Project Name</div>
-              <div className="border-t border-l border-white/10 p-4">BHK</div>
+            <div className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr_1.1fr] bg-[var(--secondary-1)] text-center text-xs font-black uppercase tracking-[1px] text-white">
+               <div className="border-t border-l border-white/10 p-4">BHK</div>
               <div className="border-t border-l border-white/10 p-4">
-                Launch / Sq.ft
+                Price / Sq.ft
               </div>
               <div className="border-t border-l border-white/10 p-4">
                 Area (Sq.ft)
               </div>
               <div className="border-t border-l border-white/10 p-4">
-                Launch Price
+                Starting Price
               </div>
             </div>
 
@@ -79,18 +81,16 @@ const OfferVariationThree = () => {
               return (
                 <div
                   key={index}
-                  className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr_1.1fr] border-t border-zinc-200 text-center text-sm text-zinc-950 transition hover:bg-[var(--accent)]/5"
+                  className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr] border-t border-zinc-200 text-center text-sm text-zinc-950 transition hover:bg-[var(--accent)]/5"
                 >
-                  <div className="bg-[var(--accent)]/10 p-4 font-bold uppercase text-zinc-950">
-                    {item.project}
-                  </div>
+                  
 
                   <div className="border-l border-zinc-200 bg-white p-4 font-bold">
                     {item.type}
                   </div>
 
                   <div className="border-l border-zinc-200 bg-white p-4 font-bold text-zinc-700">
-                    5199
+                    {item.launchRate}
                   </div>
 
                   <div className="border-l border-zinc-200 bg-zinc-50 p-4 font-semibold">
@@ -115,7 +115,7 @@ const OfferVariationThree = () => {
                       {item.project}
                     </p>
 
-                    <h3 className="mt-1 text-lg md:text-2xl font-black text-zinc-950">
+                    <h3 className="mt-1 text-lg font-black text-zinc-950 md:text-2xl">
                       {item.type}
                     </h3>
                   </div>
@@ -128,7 +128,7 @@ const OfferVariationThree = () => {
                 <div className="grid grid-cols-2 gap-2.5">
                   <div className="rounded-2xl border border-zinc-100 bg-zinc-50 p-3">
                     <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-500">
-                      Launch
+                      Price / Sq.ft
                     </p>
                     <h4 className="mt-1.5 text-base font-black text-zinc-950">
                       {item.launchRate}
@@ -146,7 +146,7 @@ const OfferVariationThree = () => {
 
                   <div className="rounded-2xl border border-zinc-100 bg-zinc-50 p-3">
                     <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-500">
-                      Launch Price
+                      Starting Price
                     </p>
                     <h4 className="mt-1.5 text-xs font-black leading-5 text-zinc-950">
                       {item.launchPrice}
@@ -155,7 +155,7 @@ const OfferVariationThree = () => {
 
                   <div className="rounded-2xl border border-zinc-100 bg-[#3B2F61] p-3">
                     <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-400">
-                      Saving
+                      Category
                     </p>
                     <h4 className="mt-1.5 text-xs font-black leading-5 text-white">
                       {item.saving}
@@ -174,18 +174,19 @@ const OfferVariationThree = () => {
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--accent)] px-7 py-3.5 text-xs font-bold uppercase tracking-[1.4px] text-white transition hover:bg-[#3B2F61]"
           >
             <Download size={16} />
-            Get Offer Details
+            Get Price Details
           </button>
 
           <div className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[1.3px] text-zinc-600 shadow-sm">
             <TrendingDown size={15} className="text-[var(--accent)]" />
-            Early Bird Price Saves More
+            Premium Homes From ₹1.20 Cr*
           </div>
         </div>
 
         <p className="mx-auto mt-4 max-w-2xl text-center text-[11px] leading-5 text-zinc-500">
           *Prices are indicative and subject to change. Please confirm final
-          price, availability, and applicable charges with the sales team.
+          price, availability, floor rise, taxes, and applicable charges with
+          the sales team.
         </p>
       </div>
     </section>

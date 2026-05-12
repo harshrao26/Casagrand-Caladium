@@ -47,7 +47,7 @@ export default function Home() {
         {/* <Configuration /> */}
                 {/* <PricingConfiguration/> */}
 <FloorPlanSection/>
-        {/* <Videos /> */}
+        <Videos />
         <Location />
         <Contact />
       </main>

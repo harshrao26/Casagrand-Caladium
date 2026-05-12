@@ -17,115 +17,136 @@ import {
 const Location = () => {
   const essentials = [
     {
-      icon: Bus,
-      label: "Kambipura",
-      dist: "1 Min",
-      km: "0.2 Km",
-      type: "Connectivity",
-    },
-    {
-      icon: Route,
-      label: "Govt SCL Road",
+      icon: Train,
+      label: "Metro Rail Station",
       dist: "5 Min",
-      km: "1.3 Km",
-      type: "Connectivity",
-    },
-    {
-      icon: Train,
-      label: "Challaghatta Metro Station",
-      dist: "10 Min",
-      km: "3.1 Km",
+      km: "1.5 Km",
       type: "Transport",
     },
     {
-      icon: Route,
-      label: "NICE Road",
-      dist: "12 Min",
-      km: "4 Km",
-      type: "Connectivity",
+      icon: Hospital,
+      label: "Lotus Speciality Hospital",
+      dist: "3 Min",
+      km: "0.85 Km",
+      type: "Hospital",
     },
     {
-      icon: Store,
-      label: "Decathlon Sports",
-      dist: "14 Min",
-      km: "5 Km",
-      type: "Entertainment",
+      icon: Hospital,
+      label: "Metro Super Speciality Hospital",
+      dist: "4 Min",
+      km: "1 Km",
+      type: "Hospital",
     },
     {
-      icon: Train,
-      label: "Kengeri Metro Station",
-      dist: "15 Min",
-      km: "5.3 Km",
-      type: "Transport",
-    },
-    {
-      icon: Bus,
-      label: "Kengeri Railway Station",
-      dist: "18 Min",
-      km: "6.6 Km",
-      type: "Transport",
-    },
-    {
-      icon: Bus,
-      label: "Kengeri Bus Terminal",
-      dist: "21 Min",
-      km: "7.8 Km",
-      type: "Transport",
-    },
-    {
-      icon: Building2,
-      label: "Sattva Global City",
-      dist: "20 Min",
-      km: "8.5 Km",
-      type: "Business Hub",
+      icon: School,
+      label: "Bharath Global School",
+      dist: "2 Min",
+      km: "0.5 Km",
+      type: "School",
     },
     {
       icon: GraduationCap,
-      label: "Don Bosco Institute of Technology",
+      label: "Indo Scots Global School",
+      dist: "5 Min",
+      km: "1.5 Km",
+      type: "School",
+    },
+    {
+      icon: School,
+      label: "Euro CBSE School",
+      dist: "6 Min",
+      km: "2 Km",
+      type: "School",
+    },
+    {
+      icon: Store,
+      label: "Decathlon",
+      dist: "6 Min",
+      km: "2 Km",
+      type: "Retail",
+    },
+    {
+      icon: Store,
+      label: "DMart",
+      dist: "7 Min",
+      km: "2.3 Km",
+      type: "Daily Convenience",
+    },
+    {
+      icon: Building2,
+      label: "International Tech Park",
       dist: "8 Min",
-      km: "2.9 Km",
-      type: "Institution",
+      km: "3 Km",
+      type: "Business Hub",
+    },
+    {
+      icon: Building2,
+      label: "EON IT Park",
+      dist: "10 Min",
+      km: "4 Km",
+      type: "IT Hub",
     },
     {
       icon: Hospital,
-      label: "Rajarajeshwari Medical College & Hospital",
-      dist: "11 Min",
-      km: "3.3 Km",
+      label: "Manipal Hospital",
+      dist: "12 Min",
+      km: "5 Km",
       type: "Hospital",
     },
     {
-      icon: Hospital,
-      label: "SPARSH Hospital",
-      dist: "29 Min",
-      km: "12 Km",
-      type: "Hospital",
+      icon: School,
+      label: "Podar International School",
+      dist: "12 Min",
+      km: "5 Km",
+      type: "School",
+    },
+    {
+      icon: Store,
+      label: "Phoenix Mall",
+      dist: "18 Min",
+      km: "7 Km",
+      type: "Shopping",
+    },
+    {
+      icon: Store,
+      label: "Amanora Mall",
+      dist: "22 Min",
+      km: "9 Km",
+      type: "Shopping",
+    },
+    {
+      icon: Bus,
+      label: "Pune International Airport",
+      dist: "25 Min",
+      km: "10 Km",
+      type: "Airport",
     },
   ];
 
   const featured = [
     {
-      icon: Bus,
-      label: "Kambipura",
-      dist: "1 Min",
-      km: "0.2 Km",
+      icon: Train,
+      label: "Metro Rail Station",
+      dist: "5 Min",
+      km: "1.5 Km",
     },
     {
-      icon: Route,
-      label: "NICE Road",
-      dist: "12 Min",
+      icon: Building2,
+      label: "International Tech Park",
+      dist: "8 Min",
+      km: "3 Km",
+    },
+    {
+      icon: Building2,
+      label: "EON IT Park",
+      dist: "10 Min",
       km: "4 Km",
     },
     {
-      icon: Train,
-      label: "Challaghatta Metro Station",
-      dist: "10 Min",
-      km: "3.1 Km",
-    },
-    {
-      icon: Train,
-      label: "Kengeri Metro Station",
-      dist: "15 Min",
-      km: "5.3 Km",
+      icon: Bus,
+      label: "Pune International Airport",
+      dist: "25 Min",
+      km: "10 Km",
     },
   ];
 
@@ -145,15 +166,15 @@ const Location = () => {
             </p>
 
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-white md:text-4xl">
-              Kumbalgodu Nearby{" "}
+              Upper Kharadi{" "}
               <span className="text-[var(--accent)]">Connectivity</span>
             </h2>
           </div>
 
           <p className="max-w-2xl text-sm leading-7 text-gray-400 md:ml-auto md:text-right md:text-base">
-            Enjoy quick access to NICE Road, metro stations, railway
-            connectivity, hospitals, education hubs, business destinations, and
-            daily conveniences around Kumbalgodu.
+            Enjoy quick access to metro connectivity, Pune International
+            Airport, IT parks, schools, hospitals, shopping destinations, and
+            everyday conveniences around Upper Kharadi and Wagholi.
           </p>
         </div>
 
@@ -161,7 +182,7 @@ const Location = () => {
         <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04] p-2 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl md:rounded-[36px] md:p-3 md:shadow-[0_35px_120px_rgba(0,0,0,0.55)]">
           <div className="relative h-[340px] overflow-hidden rounded-[22px] md:h-[560px] md:rounded-[28px]">
             <iframe
-              src="https://www.google.com/maps?q=VFF2%2BQRJ%2C%20off%20Mysore%20Road%2C%20Kumbalgodu%2C%20Bengaluru%2C%20Karnataka%20560074&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.042484534388!2d73.9718762755476!3d18.572123282531447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c31f9fbe5ce3%3A0x8eb871993b2d1a0e!2sCasagrand%20Caladium%20Pune!5e0!3m2!1sen!2sin!4v1778569271108!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -180,12 +201,12 @@ const Location = () => {
                     Project Location
                   </p>
                   <h3 className="mt-2 text-lg font-semibold text-white md:text-2xl">
-                    Casagrand Moondance, Kumbalgodu
+                    Casagrand Caladium, Upper Kharadi, Pune
                   </h3>
                 </div>
 
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=VFF2%2BQRJ%2C%20off%20Mysore%20Road%2C%20Kumbalgodu%2C%20Bengaluru%2C%20Karnataka%20560074"
+                  href="https://www.google.com/maps/search/?api=1&query=Casagrand%20Caladium%20Upper%20Kharadi%20Pune"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-bold text-white"
@@ -238,7 +259,7 @@ const Location = () => {
               Nearby Places
             </p>
             <h3 className="mt-2 text-xl font-bold text-white md:text-2xl">
-              Key landmarks around the project
+              Key landmarks around Casagrand Caladium
             </h3>
           </div>
 

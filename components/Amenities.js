@@ -29,30 +29,30 @@ import {
 } from "lucide-react";
 
 const amenities = [
-  { icon: Trophy, label: "Golf Putting" },
-  { icon: ShoppingCart, label: "Convenience Store" },
-  { icon: Flame, label: "Barbeque Setup" },
-  { icon: Dumbbell, label: "Gym" },
-  { icon: Layout, label: "Courtyards" },
-  { icon: Waves, label: "Swimming Pool" },
-  { icon: Trees, label: "Forest Trail" },
+  { icon: Waves, label: "Rooftop Infinity Pool" },
+  { icon: Dumbbell, label: "Rooftop Gym" },
+  { icon: Trees, label: "Nature Trail" },
   { icon: Baby, label: "Kids Play Area" },
-  { icon: Gamepad2, label: "Games Room" },
-  { icon: Volleyball, label: "Sports Court" },
+  { icon: Gamepad2, label: "Indoor Games" },
   { icon: Film, label: "Sky Cinema" },
   { icon: Dog, label: "Pet Park" },
-  { icon: Car, label: "Car Wash Bay" },
-  { icon: Zap, label: "EV Charging" },
-  { icon: Coffee, label: "Coffee Shop" },
-  { icon: BookOpen, label: "Library" },
+  { icon: Flame, label: "Barbeque Lawn" },
+  { icon: Coffee, label: "Coffee Kiosk" },
+  { icon: BookOpen, label: "Reading Pods" },
   { icon: BriefcaseBusiness, label: "Co-working Space" },
-  { icon: Scissors, label: "Salon & Spa" },
-  { icon: HeartPulse, label: "Clinic & Pharmacy" },
+  { icon: Volleyball, label: "Sports Court" },
+  { icon: Footprints, label: "Jogging Track" },
+  { icon: Bike, label: "Cycling Lane" },
+  { icon: Dumbbell, label: "Outdoor Gym" },
+  { icon: Layout, label: "Meditation Deck" },
+  { icon: Trophy, label: "Amphitheatre" },
+  { icon: HeartPulse, label: "Yoga Court" },
+  { icon: Baby, label: "Creche" },
+  { icon: ShoppingCart, label: "Convenience Store" },
+  { icon: Car, label: "Car Charging Bay" },
+  { icon: Zap, label: "EV Charging" },
+  { icon: Scissors, label: "Laundry" },
   { icon: ShieldCheck, label: "CCTV Security" },
-  { icon: Footprints, label: "Walking Trail" },
-  { icon: Bath, label: "Jacuzzi & Steam" },
-  { icon: CircleDot, label: "Cricket Net" },
-  { icon: Bike, label: "Skating Rink" },
 ];
 
 const chunkItems = (items, size) => {
@@ -90,6 +90,7 @@ const AmenitiesVariationSeven = () => {
   useEffect(() => {
     setActivePage(0);
   }, [itemsPerPage]);
+
   useEffect(() => {
     if (pages.length <= 1 || isPaused) return;
 
@@ -108,21 +109,22 @@ const AmenitiesVariationSeven = () => {
       <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[var(--accent)]/10 blur-[130px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-10 flex flex-col justify-between   md:flex-row md:items-end">
+        <div className="mb-10 flex flex-col justify-between md:flex-row md:items-end">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[4px] text-[var(--accent)]">
               Amenities
             </p>
 
             <h2 className="section-title mt-3">
-              Elite Living{" "}
+              110+ Lifestyle{" "}
               <span className="text-[var(--accent)]">Amenities</span>
             </h2>
           </div>
 
           <p className="max-w-xl text-sm leading-7 text-zinc-600 md:text-base">
-            Explore sports, leisure, convenience, wellness, security and
-            lifestyle amenities crafted for a premium community experience.
+            Discover a thoughtfully planned lifestyle with rooftop leisure,
+            wellness spaces, sports zones, kids-focused amenities, green trails,
+            convenience features, and security essentials at Casagrand Caladium.
           </p>
         </div>
 

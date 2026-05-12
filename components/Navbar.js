@@ -73,18 +73,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden items-center gap-3 lg:flex">
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-600">
-              <MapPin size={15} className="text-[var(--accent)]" />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.google.com/maps?cid=8194377754012098570&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en&gl=IN&source=embed"
-                className="transition hover:text-[var(--accent)]"
-              >
-                Kumbalgodu
-              </a>
-            </div>
-
+             
             <button
               type="button"
               onClick={openLeadForm}

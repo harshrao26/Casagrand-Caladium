@@ -10,14 +10,12 @@ const Videos = () => {
     {
       title: "Top 6 Reasons to Buy",
       desc: "A quick overview of the project’s strongest lifestyle and investment highlights.",
-      videoUrl: "/vid/Copy of Top 6 reasons Moondance-phase 2.mp4",
-      thumb: "/ol.png",
+      videoUrl: "https://www.youtube.com/embed/hgDJPI8wFpo?start=10",
     },
     {
       title: "Phase 2 Walkthrough",
       desc: "Explore the Phase 2 project visuals through a detailed walkthrough video.",
-      videoUrl: "/vid/Copy of CG_CASABLANCAPHASE 2-001.mp4",
-      thumb: "/ol.png",
+      videoUrl: "https://www.youtube.com/embed/aR74le2OvPU",
     },
   ];
 
@@ -42,16 +40,14 @@ const Videos = () => {
         </div>
 
         <div className="relative overflow-hidden rounded-[36px] bg-zinc-950 p-2 shadow-[0_40px_120px_rgba(0,0,0,0.22)]">
-          <video
+          <iframe
             key={tabs[activeTab].videoUrl}
-            className="aspect-video w-full rounded-[30px] bg-black object-cover"
-            controls
-            playsInline
-            poster={tabs[activeTab].thumb}
-          >
-            <source src={tabs[activeTab].videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            className="aspect-video w-full rounded-[30px] bg-black"
+            src={tabs[activeTab].videoUrl}
+            title={tabs[activeTab].title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
         </div>
 
         <div className="mt-8 grid gap-4  grid-cols-2">
