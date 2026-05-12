@@ -1,10 +1,17 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
-import { Camera, Building2, Trees, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Camera, Building2, Trees, X, ChevronLeft, ChevronRight, LayoutGrid } from "lucide-react";
 import { useLeadForm } from "./LeadFormContext";
 
 const TABS = [
+  {
+    key: "all",
+    label: "All",
+    icon: LayoutGrid,
+    title: "All Images",
+    desc: "Explore all premium visuals from Casagrand Caladium.",
+  },
   {
     key: "elevation",
     label: "Elevation",
@@ -30,7 +37,7 @@ const TABS = [
 
 const Gallery = () => {
   const { openLeadForm } = useLeadForm();
-  const [activeTab, setActiveTab] = useState("elevation");
+  const [activeTab, setActiveTab] = useState("all");
   const [images, setImages] = useState({ elevation: [], indoor: [], amenities: [] });
   const [loading, setLoading] = useState(true);
   const [lightbox, setLightbox] = useState(null); // { index, tab }
@@ -49,13 +56,14 @@ const Gallery = () => {
       .catch(() => setLoading(false));
   }, []);
 
-  const currentImages = images[activeTab] || [];
+  const allImages = [...(images.elevation || []), ...(images.indoor || []), ...(images.amenities || [])];
+  const currentImages = activeTab === "all" ? allImages : (images[activeTab] || []);
   const activeTabInfo = TABS.find((t) => t.key === activeTab);
 
   // Lightbox navigation
   const openLightbox = (index) => setLightbox({ index, tab: activeTab });
   const closeLightbox = () => setLightbox(null);
-  const lightboxImages = lightbox ? images[lightbox.tab] : [];
+  const lightboxImages = lightbox ? (lightbox.tab === "all" ? allImages : images[lightbox.tab]) : [];
   const prevImage = useCallback(() => {
     if (!lightbox) return;
     setLightbox((prev) => ({
@@ -197,7 +205,7 @@ const Gallery = () => {
                       isActive ? "bg-white/20 text-white" : "bg-white/10 text-white/60"
                     }`}
                   >
-                    {images[tab.key]?.length ?? 0}
+                    {tab.key === "all" ? allImages.length : (images[tab.key]?.length ?? 0)}
                   </span>
                 </button>
               );
