@@ -10,7 +10,7 @@ const TABS = [
     label: "Elevation",
     icon: Building2,
     title: "Elevation Views",
-    desc: "Stunning architectural elevations capturing the grand exterior of Casagrand Moondance.",
+    desc: "Stunning architectural elevations capturing the grand exterior of Casagrand Caladium.",
   },
   {
     key: "indoor",

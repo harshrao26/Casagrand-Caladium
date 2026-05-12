@@ -64,7 +64,7 @@ const OfferVariationThree = () => {
 
           {/* Desktop Table */}
           <div className="hidden lg:block">
-            <div className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr_1.1fr] bg-[var(--secondary-1)] text-center text-xs font-black uppercase tracking-[1px] text-white">
+            <div className="grid grid-cols-[1.1fr_0.7fr_1.1fr_1.4fr] bg-[var(--secondary-1)] text-center text-xs font-black uppercase tracking-[1px] text-white">
                <div className="border-t border-l border-white/10 p-4">BHK</div>
               <div className="border-t border-l border-white/10 p-4">
                 Price / Sq.ft
@@ -153,7 +153,7 @@ const OfferVariationThree = () => {
                     </h4>
                   </div>
 
-                  <div className="rounded-2xl border border-zinc-100 bg-[#3B2F61] p-3">
+                  <div className="rounded-2xl border border-zinc-100 bg-[#2F5544] p-3">
                     <p className="text-[9px] font-bold uppercase tracking-[1.3px] text-zinc-400">
                       Category
                     </p>
@@ -167,21 +167,7 @@ const OfferVariationThree = () => {
           </div>
         </div>
 
-        <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <button
-            type="button"
-            onClick={openLeadForm}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--accent)] px-7 py-3.5 text-xs font-bold uppercase tracking-[1.4px] text-white transition hover:bg-[#3B2F61]"
-          >
-            <Download size={16} />
-            Get Price Details
-          </button>
-
-          <div className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[1.3px] text-zinc-600 shadow-sm">
-            <TrendingDown size={15} className="text-[var(--accent)]" />
-            Premium Homes From ₹1.20 Cr*
-          </div>
-        </div>
+        
 
         <p className="mx-auto mt-4 max-w-2xl text-center text-[11px] leading-5 text-zinc-500">
           *Prices are indicative and subject to change. Please confirm final

@@ -238,12 +238,12 @@ const PricingConfiguration = () => {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-400 md:text-base">
-            Explore Casagrand Moondance Kumbalgodu configurations, super
+            Explore Casagrand Caladium Upper Kharadi configurations, super
             built-up areas, basic rate, and current launch pricing.
           </p>
         </div>
 
-        {renderPricingTable("Casagrand Moondance Kumbalgodu", phase2)}
+        {renderPricingTable("Casagrand Caladium Upper Kharadi", phase2)}
         {/* {renderPricingTable("Apartments - Phase 1", phase1)} */}
 
         <div className="mx-auto max-w-2xl rounded-full border border-white/10 bg-white/[0.04] px-5 py-4 text-center backdrop-blur-xl">

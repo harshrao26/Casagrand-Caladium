@@ -70,7 +70,7 @@ const GalleryHeader = ({ dark = false }) => {
           dark ? "section-copy-on-dark" : ""
         }`}
       >
-        Take a glimpse into the life that awaits you at Casagrand Moondance.
+        Take a glimpse into the life that awaits you at Casagrand Caladium.
         Every corner is crafted for perfection.
       </p>
     </div>
@@ -285,7 +285,7 @@ export const GalleryVariationFour = () => {
 
           <p className="section-copy">
             Discover the grand architecture, evening podiums, clubhouse views,
-            entrance experience and open landscapes of Casagrand Moondance.
+            entrance experience and open landscapes of Casagrand Caladium.
           </p>
         </div>
 
@@ -505,7 +505,7 @@ export const GalleryVariationSeven = () => {
 
           <p className="section-copy max-w-xl">
             Explore the architectural presence, premium clubhouse, grand arrival
-            and lifestyle spaces of Casagrand Moondance.
+            and lifestyle spaces of Casagrand Caladium.
           </p>
         </div>
 

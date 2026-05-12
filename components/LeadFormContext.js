@@ -165,18 +165,18 @@ const LeadFormModal = ({ isOpen, onClose }) => {
         <div className="relative hidden min-h-[520px] overflow-hidden bg-[var(--secondary-1)] md:block">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/indoor-images/Copy of s03.jpg')" }}
-          />₹
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent" />
+            style={{ backgroundImage: "url('/prop/hero.png')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/0 to-transparent" />
 
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
             <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-2 text-xs font-bold uppercase tracking-[2px] text-white">
               <MapPin size={14} />
-              Kumbalgodu
+              Upper Kharadi
             </p>
 
             <h3 className="text-xl md:text-3xl font-bold leading-tight">
-              Visit Casagrand Moondance
+              Visit Casagrand Caladium
             </h3>
 
             <p className="mt-4 text-sm leading-7 text-zinc-300">
@@ -198,7 +198,7 @@ const LeadFormModal = ({ isOpen, onClose }) => {
 
           <div className="mb-7 pr-12">
             <p className="text-xs font-bold uppercase tracking-[3px] text-[var(--accent)]">
-              Casagrand Moondance
+              Casagrand Caladium
             </p>
 
             <h2 className="mt-3 text-2xl font-extrabold leading-tight text-zinc-950 md:text-3xl">

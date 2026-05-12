@@ -28,7 +28,7 @@ const ContactMobileVariationFour = () => {
               </h2>
 
               <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-300 md:mt-5 md:text-base md:leading-7 md:text-zinc-600">
-                Experience spacious living at Casagrand Moondance Kumbalgodu.
+                Experience spacious living at Casagrand Caladium Upper Kharadi.
                 Fill out the form and our representative will get back to you
                 shortly with brochure, pricing, and visit scheduling details.
               </p>
@@ -85,7 +85,7 @@ const ContactMobileVariationFour = () => {
                     Location
                   </p>
                   <p className="mt-1 text-sm font-bold leading-5 text-zinc-950 md:text-base md:leading-6">
-                    VFF2+QRJ, off Mysore Road, Kumbalgodu, Bengaluru, Karnataka
+                    VFF2+QRJ, off Mysore Road, Upper Kharadi, Pune, Karnataka
                     560074
                   </p>
                 </div>

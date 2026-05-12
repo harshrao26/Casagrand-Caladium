@@ -35,7 +35,7 @@ const Videos = () => {
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-600 md:text-base">
             Watch curated videos that explain the project highlights,
-            walkthrough experience, and reasons to choose Casagrand Moondance.
+            walkthrough experience, and reasons to choose Casagrand Caladium.
           </p>
         </div>
 

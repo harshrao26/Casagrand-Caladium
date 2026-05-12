@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 
 
 export const metadata = {
-  title: "Casagrand Moondance Kumbalgodu | Apartments in Kumbalgodu, Bengaluru",
-  description: "Explore Casagrand Moondance Kumbalgodu, a new launch residential community off Mysore Road with spacious 1, 2 and 3 BHK apartments across 8.25 acres.",
+  title: "Casagrand Caladium | Luxury Apartments in Upper Kharadi, Pune",
+  description: "Explore Casagrand Caladium, a premium residential community in Upper Kharadi, Pune with spacious 2 & 3 BHK apartments. Experience luxury living at its finest.",
   icons: {
     icon: [
       { url: '/favicon.ico' },

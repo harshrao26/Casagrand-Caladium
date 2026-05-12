@@ -42,7 +42,7 @@ const VirtualTour360 = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Take an immersive virtual walkthrough of Casagrand Moondance and
+            Take an immersive virtual walkthrough of Casagrand Caladium and
             explore the project spaces, lifestyle zones, and visual experience
             before your site visit.
           </motion.p>
@@ -58,7 +58,7 @@ const VirtualTour360 = () => {
           <div className="relative h-[440px] overflow-hidden rounded-[24px] bg-black md:h-[640px] md:rounded-[30px]">
             <iframe
               src="https://onetobeam.com/virtual_tours/casagrand_Moondance/"
-              title="Casagrand Moondance 360 Virtual Tour"
+              title="Casagrand Caladium 360 Virtual Tour"
               className="h-full w-full"
               allowFullScreen
               loading="lazy"

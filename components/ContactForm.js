@@ -6,7 +6,7 @@ const ContactForm = () => {
     <section className="section-shell bg-zinc-50" id="contact-us">
       <div className="container mx-auto px-4 text-center">
         <h2 className="section-title text-center">Book Your Site Visit Now</h2>
-        <p className="section-copy mb-10 md:mb-12">Explore Casagrand Moondance Kumbalgodu, Bengaluru</p>
+        <p className="section-copy mb-10 md:mb-12">Explore Casagrand Caladium Upper Kharadi, Pune</p>
         
         <div className="footer-call-wrap flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/3">

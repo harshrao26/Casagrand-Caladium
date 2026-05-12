@@ -26,7 +26,7 @@ const Configuration = () => {
           </h2>
 
           <p className="section-copy-on-dark mx-auto mt-4 max-w-2xl">
-            Spacious homes in Kumbalgodu crafted for modern living with
+            Spacious homes in Upper Kharadi crafted for modern living with
             excellent Mysore Road connectivity and investment potential.
           </p>
         </div>
@@ -40,7 +40,7 @@ const Configuration = () => {
                 Project
               </p>
               <h3 className="text-lg font-semibold text-white md:text-xl">
-                Casagrand Moondance
+                Casagrand Caladium
               </h3>
             </div>
 
@@ -49,7 +49,7 @@ const Configuration = () => {
                 Location
               </p>
               <h3 className="text-lg font-semibold text-white md:text-xl">
-                Kumbalgodu, Bengaluru
+                Upper Kharadi, Pune
               </h3>
             </div>
 

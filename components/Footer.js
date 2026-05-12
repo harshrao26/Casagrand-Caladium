@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="space-y-6 p-2">
             <img src="/logo.png" alt="Casagrand" className="h-12 bg-white p-2 rounded-xl" />
             <p className="section-copy section-copy-on-dark">
-              Casagrand Moondance Kumbalgodu brings spacious 2 & 3 BHK apartments to the fast-growing Mysore Road corridor, with low-rise planning and lifestyle amenities for everyday living.
+              Casagrand Caladium Upper Kharadi brings spacious 2 & 3 BHK apartments to the fast-growing Mysore Road corridor, with low-rise planning and lifestyle amenities for everyday living.
             </p>
              
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">
                 <MapPin className="text-[var(--accent)] shrink-0 mt-1" size={20} />
-                <span className="text-white">VFF2+QRJ, off Mysore Road, Kumbalgodu, Bengaluru, Karnataka 560074</span>
+                <span className="text-white">VFF2+QRJ, off Mysore Road, Upper Kharadi, Pune, Karnataka 560074</span>
               </li>
               
               <li className="flex items-center space-x-4">
