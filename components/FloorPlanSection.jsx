@@ -19,7 +19,7 @@ import { useLeadForm } from "./LeadFormContext";
 const floorPlanGroups = [
   {
     id: "unit-master",
-    label: "Unit Master",
+    label: "Unit",
     icon: Home,
     images: [
       { title: "Sheet 1", src: "/Floorplans/unit/sheet-1.jpg" },
@@ -34,6 +34,23 @@ const floorPlanGroups = [
       { title: "Sheet 10", src: "/Floorplans/unit/sheet-10.jpg" },
       { title: "Sheet 11", src: "/Floorplans/unit/sheet-11.jpg" },
       { title: "Sheet 12", src: "/Floorplans/unit/sheet-12.jpg" },
+    ],
+  },
+  {
+    id: "master",
+    label: "Master",
+    icon: Layers3,
+    images: [
+      { title: "Master 1", src: "/Floorplans/master/master-1.jpg" },
+      { title: "Master 2", src: "/Floorplans/master/master-2.jpg" },
+      { title: "Master 3", src: "/Floorplans/master/master-3.jpg" },
+      { title: "Master 4", src: "/Floorplans/master/master-4.jpg" },
+      { title: "Master 5", src: "/Floorplans/master/master-5.jpg" },
+      { title: "Master 6", src: "/Floorplans/master/master-6.jpg" },
+      { title: "Master 7", src: "/Floorplans/master/master-7.jpg" },
+      { title: "Master 8", src: "/Floorplans/master/master-8.jpg" },
+      { title: "Master 9", src: "/Floorplans/master/master-9.jpg" },
+      { title: "Master 10", src: "/Floorplans/master/master-10.jpg" },
     ],
   },
   {
@@ -65,34 +82,17 @@ const floorPlanGroups = [
     icon: Map,
     images: [
       {
-        title: "Master Plan",
-        src: "/Floorplans/master_plan/master-plan.jpg",
-      },
-      {
-        title: "Basement Level 1",
+        title: "Basement",
         src: "/Floorplans/master_plan/basement-1.jpg",
       },
       {
-        title: "Basement Level 2",
+        title: "Basement 1",
         src: "/Floorplans/master_plan/basement-2.jpg",
       },
-    ],
-  },
-  {
-    id: "master",
-    label: "Master",
-    icon: Layers3,
-    images: [
-      { title: "Master 1", src: "/Floorplans/master/master-1.jpg" },
-      { title: "Master 2", src: "/Floorplans/master/master-2.jpg" },
-      { title: "Master 3", src: "/Floorplans/master/master-3.jpg" },
-      { title: "Master 4", src: "/Floorplans/master/master-4.jpg" },
-      { title: "Master 5", src: "/Floorplans/master/master-5.jpg" },
-      { title: "Master 6", src: "/Floorplans/master/master-6.jpg" },
-      { title: "Master 7", src: "/Floorplans/master/master-7.jpg" },
-      { title: "Master 8", src: "/Floorplans/master/master-8.jpg" },
-      { title: "Master 9", src: "/Floorplans/master/master-9.jpg" },
-      { title: "Master 10", src: "/Floorplans/master/master-10.jpg" },
+      {
+        title: "Master Plan",
+        src: "/Floorplans/master_plan/master-plan.jpg",
+      },
     ],
   },
 ];
