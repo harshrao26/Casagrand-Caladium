@@ -15,12 +15,9 @@ export const metadata = {
   title: "Casagrand Caladium | Luxury Apartments in Upper Kharadi, Pune",
   description: "Explore Casagrand Caladium, a premium residential community in Upper Kharadi, Pune with spacious 2 & 3 BHK apartments. Experience luxury living at its finest.",
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-    ],
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
   manifest: '/site.webmanifest',
 };
